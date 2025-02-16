@@ -2,14 +2,15 @@ class Solution {
 public:
     bool canPlaceFlowers(vector<int>& flowerbed, int n) {
         int Available_Slots=0;
-        int Flowebed_Size = flowerbed.size();
+        int Flowerbed_Size = flowerbed.size();
         bool Left_Empty,Right_Empty;
-        for(int i=0 ; i < Flowebed_Size ; i++){
+        for(int i=0 ; i < Flowerbed_Size ; i++){
             Left_Empty = (i==0) || (flowerbed[i-1]==0);
-            Right_Empty = (i==Flowebed_Size-1) || (flowerbed[i+1]==0);
+            Right_Empty = (i==Flowerbed_Size-1) || (flowerbed[i+1]==0);
             if(Left_Empty&&Right_Empty && flowerbed[i]==0 ){
                 flowerbed[i]=1;
                 Available_Slots++;
+                if (Available_Slots >= n) return true; // Return early
             }
             if(Available_Slots>=n){
                 break;
