@@ -11,31 +11,33 @@ public:
 
   
     int lengthOfLIS(vector<int>& nums) {
-       vector<int> lis;
+        int n = nums.size();
 
-        for (int num : nums) {
-            // Perform manual binary search
-            int left = 0, right = lis.size() - 1, pos = -1;
-            while (left <= right) {
-                int mid = left + (right - left) / 2;
-                if (lis[mid] >= num) {
+        //Binary Search + DP (Patience Sorting) - O(n log n)
+        vector<int>LIS_BS;
+        int mid;
+        for(int num: nums){
+            int left = 0, right = LIS_BS.size() - 1, pos = -1;
+            while(left <= right){
+                mid = left + (right-left)/2;
+                if(LIS_BS[mid] >=num ){
                     pos = mid;  // Found a possible replacement position
                     right = mid - 1;
-                } else {
+                }else{
                     left = mid + 1;
                 }
             }
 
-            // If no replacement found, append new element
-            if (pos == -1) {
-                lis.push_back(num);
-            } else {
-                lis[pos] = num; // Replace element at the found position
+            //Replacement found / not found
+            if(pos!=-1){
+                LIS_BS[pos]=num;
+            }else{
+                LIS_BS.push_back(num);
             }
         }
 
-        return lis.size();
-    
+        return LIS_BS.size();
+
 
 
         // Dynamic Programming Approach  O(N^2)
