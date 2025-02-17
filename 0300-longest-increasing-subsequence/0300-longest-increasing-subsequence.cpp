@@ -8,8 +8,38 @@ class Solution {
         }
     }
 public:
+
+  
     int lengthOfLIS(vector<int>& nums) {
-        int n = nums.size();
+       vector<int> lis;
+
+        for (int num : nums) {
+            // Perform manual binary search
+            int left = 0, right = lis.size() - 1, pos = -1;
+            while (left <= right) {
+                int mid = left + (right - left) / 2;
+                if (lis[mid] >= num) {
+                    pos = mid;  // Found a possible replacement position
+                    right = mid - 1;
+                } else {
+                    left = mid + 1;
+                }
+            }
+
+            // If no replacement found, append new element
+            if (pos == -1) {
+                lis.push_back(num);
+            } else {
+                lis[pos] = num; // Replace element at the found position
+            }
+        }
+
+        return lis.size();
+    
+
+
+        // Dynamic Programming Approach  O(N^2)
+        /*
         vector<int>LIS(n,1);
         for(int i=n-2; i >=0 ; i--){
             for(int j=i+1 ; j<n ; j++){
@@ -25,5 +55,6 @@ public:
             }
         }
         return Max_LIS;
+        */
     }
 };
