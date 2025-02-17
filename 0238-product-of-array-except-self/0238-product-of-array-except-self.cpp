@@ -1,7 +1,26 @@
 class Solution {
 public:
     vector<int> productExceptSelf(vector<int>& nums) {
+        
         int nums_Size=  nums.size();
+        vector<int>Result(nums_Size,1);
+        int Curr_Product=1;
+        
+        // Compute Prefix+Product First
+        for(int i = 0 ; i<nums_Size ; i++){
+            Result[i]*=Curr_Product;
+            Curr_Product*=nums[i];;
+        }
+
+        Curr_Product=1;
+        for(int j = nums_Size-1 ; j>=0 ; j--){
+            Result[j]*=Curr_Product;
+            Curr_Product*=nums[j];
+        }
+        return Result;
+
+       // Slow approach as it uses space complexity O(N)
+        /*int nums_Size=  nums.size();
         vector<int>Prefix_Product(nums_Size,1);
         vector<int>Postfix_Product(nums_Size,1);
 
@@ -34,6 +53,7 @@ public:
             Result[i]=Prefix_Product[i] * Postfix_Product[i];
         }
         return Result;
+        */
     }
 };
 
