@@ -2,6 +2,22 @@ class Solution {
 public:
     bool isSubsequence(string s, string t) {
 
+        // Faster Approach O(t_size)
+
+        int i=0,j=0;
+        int S_Size = s.size();
+        int t_Size = t.size();
+
+        while( i < S_Size &&  j < t_Size){
+            if(s[i]==t[j]){
+                i++;
+            }
+            j++;
+        }
+        return i==s.size();
+
+        //Time Compelxity O(t_size * s_size)
+        /*
         int S_Size = s.size();
         int t_Size = t.size();
         int Last_Idx=-1;
@@ -20,7 +36,7 @@ public:
             }
         }
         return true;
-
+        */
     }
 };
 
