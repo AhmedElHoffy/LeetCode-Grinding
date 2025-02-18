@@ -1,11 +1,36 @@
 class Solution {
+private:
+
+
 public:
     int maxOperations(vector<int>& nums, int k) {
-        
 
+        sort(nums.begin(), nums.end()); // O(n log n)
+        
+        int left = 0, right = nums.size() - 1;
+        int count = 0;
+        
+        while (left < right) {
+            int sum = nums[left] + nums[right];
+            
+            if (sum == k) { 
+                count++; 
+                left++; 
+                right--;
+            } 
+            else if (sum < k) { 
+                left++; 
+            } 
+            else { 
+                right--; 
+            }
+        }
+        return count;
+        
+        
         // HashMap approach
 
-        int n = nums.size();
+        /*int n = nums.size();
         unordered_map<int,int>Freq; //integer adn freq map
 
         int Complement;
@@ -21,7 +46,7 @@ public:
             }
         }
         return count;
-        
+        */
     }
 };
 
