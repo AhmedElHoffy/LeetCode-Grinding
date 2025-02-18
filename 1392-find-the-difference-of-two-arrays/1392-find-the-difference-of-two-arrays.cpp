@@ -11,13 +11,13 @@ public:
         vector<vector<int>>Distinct_Arrays(2);
 
         for(int num : nums1_Set){
-            if(nums2_Set.find(num)==nums2_Set.end()){
+            if(!nums2_Set.count(num)){
                 Distinct_Arrays[0].push_back(num);
             }
         }
 
         for(int num : nums2_Set){
-            if(nums1_Set.find(num)==nums1_Set.end()){
+            if(!nums1_Set.count(num)){
                 Distinct_Arrays[1].push_back(num);
             }
         }
