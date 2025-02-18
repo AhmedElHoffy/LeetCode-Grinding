@@ -18,8 +18,7 @@ public:
         for(int i=1; i < n ; i++){
             if(chars[i]==Curr_Char){
                 Curr_Char_Count++;
-                cout<<" At index "<< i<<" of chars vector, Curr_Char now is "<<chars[i]
-                <<" and Curr_Char_Coutn now is:  "<<Curr_Char_Count<<endl;
+
             }else{
                 // Convert the count to chars and add them to the vector
                 if (Curr_Char_Count > 1) {
@@ -42,10 +41,7 @@ public:
                 chars[index++] = c;
             }
         }
-        cout<<"Last Value of Digits vector is: ";
-        for(char c : Digits){
-           cout<< c << " ";
-        }
+
         cout<<endl;
         return index;
 
