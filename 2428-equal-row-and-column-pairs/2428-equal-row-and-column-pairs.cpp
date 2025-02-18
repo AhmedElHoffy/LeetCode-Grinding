@@ -1,30 +1,32 @@
 class Solution {
 public:
     int equalPairs(vector<vector<int>>& grid) {
-        int n = grid.size(); // n x n matrix
-        multiset<vector<int>> Rows_Elements_Set, Columns_Elements_Set;
-        int count = 0;
+        int rows_Size = grid.size();
+        int Cols_Size = grid[0].size();
+        multiset<vector<int>>Rows_Elements_Set;
+        multiset<vector<int>>Columns_Elements_Set;
 
-        // Store row vectors in multiset
-        for (int i = 0; i < n; i++) {
+        int count=0;
+        
+        for(int i=0 ; i < rows_Size; i++){
             Rows_Elements_Set.insert(grid[i]);
         }
 
-        // Store column vectors in multiset
-        for (int j = 0; j < n; j++) {
-            vector<int> Curr_Col(n);
-            for (int i = 0; i < n; i++) {
-                Curr_Col[i] = grid[i][j]; // Corrected indexing
+
+        vector<int>Curr_Col(Cols_Size,0);
+        for(int j = 0 ;  j < Cols_Size ; j++){
+             vector<int>Curr_Col(Cols_Size);
+            for(int i=0 ; i < rows_Size ; i++){
+                Curr_Col[i]=grid[i][j];
             }
             Columns_Elements_Set.insert(Curr_Col);
         }
 
-        // Count matching row and column vectors
-        for (const auto& vec : Rows_Elements_Set) {
-            count += Columns_Elements_Set.count(vec);
+        for(auto vec : Rows_Elements_Set ){
+                count+=Columns_Elements_Set.count(vec);
         }
-
         return count;
+
     }
 };
 
