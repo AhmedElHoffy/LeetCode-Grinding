@@ -23,9 +23,8 @@ public:
                 Start_Seq++;
             }
 
-            End_Seq++;
-
-            Max_Length = Max_Num(Max_Length, End_Seq - Start_Seq-1);
+             Max_Length = Max_Num(Max_Length, End_Seq - Start_Seq);
+             End_Seq++;
         }
         return Max_Length;
     }
