@@ -1,36 +1,81 @@
 class Solution {
 private:
 
+void Swap_Num(int &a, int &b){
+    int temp = a;
+        a = b;
+        b= temp;
+}
+
+int Partition (vector<int>&Arr, int LeftIdx, int RightIdx){
+    int i = LeftIdx;
+    int j = RightIdx;
+    int Pivot = i;
+    while(true){
+        while(Arr[Pivot]<= Arr[j] && Pivot!=j){
+            j--;
+        }
+        if(Pivot==j){
+            break;
+        }else if(Arr[Pivot] > Arr[j]){
+            Swap_Num(Arr[Pivot],Arr[j]);
+            Pivot= j;
+        }
+        while(Arr[i] <= Arr[Pivot] && Pivot!=i){
+            i++;
+        }
+
+        if(Pivot==i){
+            break;
+        }else if(Arr[i] > Arr[Pivot]){
+            Swap_Num(Arr[Pivot],Arr[i]);
+            Pivot = i;
+        }
+    }
+
+    return Pivot;
+}
+
+void Quick_Sort(vector<int>&arr, int l, int r){
+    int Piv_Loc;
+    if(l < r){
+        Piv_Loc = Partition(arr,l,r);
+            Quick_Sort(arr,l,Piv_Loc-1);
+            Quick_Sort(arr,Piv_Loc+1,r);
+    }
+}
 
 public:
     int maxOperations(vector<int>& nums, int k) {
 
-        sort(nums.begin(), nums.end()); // O(n log n)
         
-        int left = 0, right = nums.size() - 1;
-        int count = 0;
-        
-        while (left < right) {
-            int sum = nums[left] + nums[right];
-            
-            if (sum == k) { 
-                count++; 
-                left++; 
-                right--;
-            } 
-            else if (sum < k) { 
-                left++; 
-            } 
-            else { 
-                right--; 
+        // Quic Sort and two Pointer Approach
+       /* int n = nums.size();
+        Quick_Sort(nums,0,n-1);
+        int Left_Ptr=0, Right_Ptr = n-1;
+        int count=0;
+        int compelement;
+        int temp_sum;
+
+        while (Left_Ptr < Right_Ptr ){
+            temp_sum =  nums[Left_Ptr] + nums[Right_Ptr];
+            if(temp_sum == k){
+                count++;
+                Left_Ptr++;
+                Right_Ptr--;
+            }else if(temp_sum < k){
+                Left_Ptr++;
+            }else{
+                Right_Ptr--;
             }
         }
         return count;
-        
-        
+    
+        */
+
         // HashMap approach
 
-        /*int n = nums.size();
+        int n = nums.size();
         unordered_map<int,int>Freq; //integer adn freq map
 
         int Complement;
@@ -46,7 +91,7 @@ public:
             }
         }
         return count;
-        */
+        
     }
 };
 
