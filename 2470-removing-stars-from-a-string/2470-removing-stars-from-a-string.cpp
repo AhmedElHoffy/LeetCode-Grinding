@@ -1,18 +1,18 @@
 class Solution {
 public:
     string removeStars(string &s) {
-         int index = 0; // Pointer to track the next valid position
-        
-        for (char c : s) {
-            if (c != '*') {
-                s[index++] = c; // Store valid character
-            } else if (index > 0) {
-                index--; // Remove previous character
-            }
-        }
+         int index = 0; 
 
-        s.resize(index); // Resize the string to the correct length
-        return s;
+         for(char c : s){
+            if(c!='*'){
+                s[index++]=c;
+                
+            }else{
+                index--;
+            }
+         }
+         s.resize(index);
+         return s;
     }
 };
 
