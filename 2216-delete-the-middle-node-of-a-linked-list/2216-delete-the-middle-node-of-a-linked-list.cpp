@@ -21,11 +21,6 @@ public:
             Fast_Ptr=Fast_Ptr->next->next;
         }
         Prev_Ptr->next=Slow_Ptr->next;
-        
-        Slow_Ptr->next==nullptr;
-        ListNode* DelNode = Slow_Ptr;
-        Slow_Ptr=nullptr;
-        delete DelNode;
         return head;
         
 
