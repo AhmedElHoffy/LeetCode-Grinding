@@ -1,7 +1,37 @@
 class Solution {
+private:
+    int partition_QucikSelect(vector<int> & nums, int Left ,  int Right){
+        int Pivot= 0;
+
+        return Pivot;
+    }
 public:
     int findKthLargest(vector<int>& nums, int k) {
-        priority_queue<int>PQ;
+        priority_queue<int, vector<int>, greater<int>> minHeap; // Min heap
+
+        // Maintain a heap of size k
+        for (int num : nums) {
+            minHeap.push(num);
+            if (minHeap.size() > k) {
+                minHeap.pop();  // Remove the smallest element
+            }
+        }
+
+        return minHeap.top(); // Kth largest element
+        
+    }
+};
+
+
+
+
+
+
+
+
+//Time Complexity: O(nlogn), Space Complexity: O(n) --> Max Heap (Original Code)
+/*
+  priority_queue<int>PQ;
         int Result;
         for(int num : nums){
             PQ.push(num);
@@ -13,11 +43,25 @@ public:
             k--;
         }
         return Result;
-        
-    }
-};
+*/
 
 
+/*
+  //Time Complexity: O(n log k), Space Complexity: O(k) --> Min Heap (Optimized Approach)
+
+ priority_queue<int, vector<int>, greater<int>> minHeap; // Min heap
+
+        // Maintain a heap of size k
+        for (int num : nums) {
+            minHeap.push(num);
+            if (minHeap.size() > k) {
+                minHeap.pop();  // Remove the smallest element
+            }
+        }
+
+        return minHeap.top(); // Kth largest element
+
+*/
 
 
 
