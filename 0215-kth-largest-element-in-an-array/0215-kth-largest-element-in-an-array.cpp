@@ -1,24 +1,55 @@
 class Solution {
 private:
-    int partition_QucikSelect(vector<int> & nums, int Left ,  int Right){
-        int Pivot= 0;
+    int Partition_QucikSelect(vector<int> & nums, int Left ,  int Right){
+        int Pivot_Idx= Right;
 
-        return Pivot;
+        int i = Left, j = Right-1;
+
+        while ( i <= j){
+
+            //// Move i until we find a larger element
+            while( i <= j &&  nums[i] < nums[Pivot_Idx]){
+                i++;
+            }
+
+           // Move j until we find a smaller element 
+            while( i<=j && nums[j] > nums[Pivot_Idx]){
+                j--;
+            }
+
+            if(i <= j){
+                swap(nums[i],nums[j]);
+                i++;
+                j--;
+            }
+
+        }
+        swap(nums[i],nums[Right]);
+        return i;
+
+    }
+
+    int Quick_Select(vector<int>& nums ,int Left, int Right, int k){
+        while(Left <= Right){
+            int Pivot_Idx = Partition_QucikSelect(nums,Left,Right);
+
+            if(Pivot_Idx==k){
+                return nums[Pivot_Idx];
+            }else if(Pivot_Idx < k){
+                Left = Pivot_Idx +1;
+            }else{
+                Right = Pivot_Idx -1;
+            }
+
+        }
+        return -1;
     }
 public:
     int findKthLargest(vector<int>& nums, int k) {
-        priority_queue<int, vector<int>, greater<int>> minHeap; // Min heap
 
-        // Maintain a heap of size k
-        for (int num : nums) {
-            minHeap.push(num);
-            if (minHeap.size() > k) {
-                minHeap.pop();  // Remove the smallest element
-            }
-        }
+        int n = nums.size();
 
-        return minHeap.top(); // Kth largest element
-        
+        return Quick_Select(nums, 0 , n-1 , n-k);
     }
 };
 
