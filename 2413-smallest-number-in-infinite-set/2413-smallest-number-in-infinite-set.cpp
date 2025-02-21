@@ -1,7 +1,6 @@
 class SmallestInfiniteSet {
 public:
-    std::priority_queue<int, std::vector<int>, std::greater<int>> PQ_Descending;
-    std::set<int> addedNumbers; // Track reinserted numbers
+   set<int> S;
     int i;
 
     SmallestInfiniteSet() {
@@ -9,23 +8,17 @@ public:
     }
 
     int popSmallest() {
-        int Curr_Num;
-        if (!PQ_Descending.empty()) {
-            Curr_Num = PQ_Descending.top();
-            PQ_Descending.pop();
-            addedNumbers.erase(Curr_Num); // Remove from set
-        } else {
-            Curr_Num = i;
-            i++;
+        if (!S.empty()) {
+            int smallest = *S.begin(); // Get the smallest number
+            S.erase(S.begin());        // Remove from the set
+            return smallest;
         }
-        return Curr_Num;
+        return i++;
     }
 
     void addBack(int num) {
-        // Only add num if it was previously popped and is not in the set
-        if (num < i && addedNumbers.find(num) == addedNumbers.end()) {
-            PQ_Descending.push(num);
-            addedNumbers.insert(num);
+        if (num < i) { // Ensure only missing elements are added
+            S.insert(num);
         }
     }
 };
