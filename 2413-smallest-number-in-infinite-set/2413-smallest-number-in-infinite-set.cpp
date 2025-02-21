@@ -30,6 +30,30 @@ public:
  */
 
 
+/*
+set<int> S;
+    int i;
+
+    SmallestInfiniteSet() {
+        i = 1;
+    }
+
+    int popSmallest() {
+        if (!S.empty()) {
+            int smallest = *S.begin(); // Get the smallest number
+            S.erase(S.begin());        // Remove from the set
+            return smallest;
+        }
+        return i++;
+    }
+
+    void addBack(int num) {
+        if (num < i) { // Ensure only missing elements are added
+            S.insert(num);
+        }
+    }
+*/
+
 
 
 
