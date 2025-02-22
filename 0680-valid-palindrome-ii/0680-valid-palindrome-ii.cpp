@@ -1,30 +1,26 @@
 class Solution {
 private:
-    bool Is_Palindrome(string &SubStr, int LefIdx, int RightIdx){
-        int n_Sub = SubStr.length();
-        int L=LefIdx,R=RightIdx;
-        while(L<R){
-            if(SubStr[L]!=SubStr[R]){
-                return false;
-            }
-            L++;
-            R--;
+    bool isPalindrome(string& s, int left, int right) {
+        while (left < right) {
+            if (s[left] != s[right]) return false;
+            left++;
+            right--;
         }
         return true;
     }
 
 public:
-    bool validPalindrome(string Str) {
-        int n = Str.length();
-        int Left_Idx = 0,  Right_Idx = n-1;
+    bool validPalindrome(string s) {
+        int left = 0, right = s.length() - 1;
 
-        while(Left_Idx < Right_Idx){
-            if(Str[Left_Idx] != Str[Right_Idx]){
-                return (Is_Palindrome(Str,Left_Idx+1,Right_Idx) ||  Is_Palindrome(Str,Left_Idx,Right_Idx-1));
+        while (left < right) {
+            if (s[left] != s[right]) {
+                // Try removing one character from either side
+                return isPalindrome(s, left + 1, right) || isPalindrome(s, left, right - 1);
             }
-            Left_Idx++;
-            Right_Idx--;
-        } 
+            left++;
+            right--;
+        }
         return true;
     }
 };
