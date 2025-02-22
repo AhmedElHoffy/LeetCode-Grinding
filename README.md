@@ -23,6 +23,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0125-valid-palindrome](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0125-valid-palindrome) |
 | [0127-word-ladder](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0127-word-ladder) |
 | [0151-reverse-words-in-a-string](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0151-reverse-words-in-a-string) |
+| [0227-basic-calculator-ii](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0227-basic-calculator-ii) |
 | [0345-reverse-vowels-of-a-string](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0345-reverse-vowels-of-a-string) |
 | [0392-is-subsequence](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0392-is-subsequence) |
 | [0394-decode-string](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0394-decode-string) |
@@ -38,6 +39,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0227-basic-calculator-ii](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0227-basic-calculator-ii) |
 | [0912-random-pick-with-weight](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0912-random-pick-with-weight) |
 | [1146-greatest-common-divisor-of-strings](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1146-greatest-common-divisor-of-strings) |
 ## Array
@@ -139,6 +141,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Stack
 |  |
 | ------- |
+| [0227-basic-calculator-ii](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0227-basic-calculator-ii) |
 | [0394-decode-string](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0394-decode-string) |
 | [0735-asteroid-collision](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0735-asteroid-collision) |
 | [1371-minimum-remove-to-make-valid-parentheses](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1371-minimum-remove-to-make-valid-parentheses) |
