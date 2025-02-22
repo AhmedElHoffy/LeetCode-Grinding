@@ -5,6 +5,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0011-container-with-most-water) |
+| [0088-merge-sorted-array](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0088-merge-sorted-array) |
 | [0125-valid-palindrome](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0125-valid-palindrome) |
 | [0151-reverse-words-in-a-string](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0151-reverse-words-in-a-string) |
 | [0283-move-zeroes](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0283-move-zeroes) |
@@ -46,6 +47,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0011-container-with-most-water) |
+| [0088-merge-sorted-array](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0088-merge-sorted-array) |
 | [0215-kth-largest-element-in-an-array](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0215-kth-largest-element-in-an-array) |
 | [0238-product-of-array-except-self](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0238-product-of-array-except-self) |
 | [0283-move-zeroes](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0283-move-zeroes) |
@@ -112,6 +114,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [0088-merge-sorted-array](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0088-merge-sorted-array) |
 | [0215-kth-largest-element-in-an-array](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0215-kth-largest-element-in-an-array) |
 | [1777-determine-if-two-strings-are-close](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1777-determine-if-two-strings-are-close) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1798-max-number-of-k-sum-pairs) |
