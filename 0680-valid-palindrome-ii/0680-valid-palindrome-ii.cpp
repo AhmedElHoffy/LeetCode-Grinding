@@ -1,6 +1,6 @@
 class Solution {
 private:
-    bool Is_Palindrome(string SubStr, int LefIdx, int RightIdx){
+    bool Is_Palindrome(string &SubStr, int LefIdx, int RightIdx){
         int n_Sub = SubStr.length();
         int L=LefIdx,R=RightIdx;
         while(L<R){
