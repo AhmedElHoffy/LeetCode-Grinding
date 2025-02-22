@@ -62,6 +62,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1798-max-number-of-k-sum-pairs) |
 | [1833-find-the-highest-altitude](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1833-find-the-highest-altitude) |
+| [1909-buildings-with-an-ocean-view](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1909-buildings-with-an-ocean-view) |
 | [2428-equal-row-and-column-pairs](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/2428-equal-row-and-column-pairs) |
 | [2553-total-cost-to-hire-k-workers](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/2553-total-cost-to-hire-k-workers) |
 | [2636-maximum-subsequence-score](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/2636-maximum-subsequence-score) |
@@ -141,6 +142,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0394-decode-string](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0394-decode-string) |
 | [0735-asteroid-collision](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0735-asteroid-collision) |
 | [1371-minimum-remove-to-make-valid-parentheses](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1371-minimum-remove-to-make-valid-parentheses) |
+| [1909-buildings-with-an-ocean-view](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1909-buildings-with-an-ocean-view) |
 | [2236-maximum-twin-sum-of-a-linked-list](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/2236-maximum-twin-sum-of-a-linked-list) |
 | [2470-removing-stars-from-a-string](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/2470-removing-stars-from-a-string) |
 ## Recursion
@@ -196,4 +198,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0912-random-pick-with-weight](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0912-random-pick-with-weight) |
+## Monotonic Stack
+|  |
+| ------- |
+| [1909-buildings-with-an-ocean-view](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1909-buildings-with-an-ocean-view) |
 <!---LeetCode Topics End-->
