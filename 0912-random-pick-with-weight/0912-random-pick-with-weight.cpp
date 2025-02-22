@@ -1,34 +1,29 @@
 class Solution {
 private:
-    vector<double> Weights; // Store cumulative probabilities
-    double TotalWeight;
+vector<int>Prefix_Sum;
+int Total_Sum;
+
 public:
     Solution(vector<int>& w) {
-        int n = w.size();
-        TotalWeight = 0.0;
-        Weights.resize(n, 0.0);
-
-        // Compute total sum of weights
-        for (int num : w) {
-            TotalWeight += num;
-        }
-
-        // Convert weights to cumulative probabilities
-        double cumulativeSum = 0.0;
-        for (int i = 0; i < n; i++) {
-            cumulativeSum += w[i] / TotalWeight; // Use floating point
-            Weights[i] = cumulativeSum; // Store cumulative probability
+        Total_Sum = 0;
+        for(int Weight : w){
+            Total_Sum+= Weight;
+            Prefix_Sum.push_back(Total_Sum);
         }
     }
     
     int pickIndex() {
-        double target = (double)rand() / RAND_MAX; // Random float in [0,1]
-
-        // Iterate to find the first index where cumulative probability >= target
-        for (int i = 0; i < Weights.size(); i++) {
-            if (target < Weights[i]) return i;
+        int Target_Val = rand() % Total_Sum;
+        int L=0, R= Prefix_Sum.size()-1,  Mid;
+        while(L < R){
+            Mid = L + (R-L)/2;
+            if(Target_Val < Prefix_Sum[Mid]){
+                R = Mid;
+            }else{
+                L = Mid+1;
+            }
         }
-        return Weights.size() - 1; // Safety return (should never reach here)
+        return L;
     }
 };
 
@@ -42,7 +37,7 @@ public:
 
 
 
-
+ 
 
  /*
 class Solution {
