@@ -11,6 +11,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0283-move-zeroes](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0283-move-zeroes) |
 | [0345-reverse-vowels-of-a-string](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0345-reverse-vowels-of-a-string) |
 | [0392-is-subsequence](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0392-is-subsequence) |
+| [0408-valid-word-abbreviation](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0408-valid-word-abbreviation) |
 | [0443-string-compression](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0443-string-compression) |
 | [0680-valid-palindrome-ii](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0680-valid-palindrome-ii) |
 | [1790-lowest-common-ancestor-of-a-binary-tree-iii](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1790-lowest-common-ancestor-of-a-binary-tree-iii) |
@@ -29,6 +30,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0345-reverse-vowels-of-a-string](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0345-reverse-vowels-of-a-string) |
 | [0392-is-subsequence](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0392-is-subsequence) |
 | [0394-decode-string](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0394-decode-string) |
+| [0408-valid-word-abbreviation](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0408-valid-word-abbreviation) |
 | [0443-string-compression](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0443-string-compression) |
 | [0649-dota2-senate](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0649-dota2-senate) |
 | [0680-valid-palindrome-ii](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0680-valid-palindrome-ii) |
