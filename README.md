@@ -110,6 +110,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0127-word-ladder](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0127-word-ladder) |
+| [0138-copy-list-with-random-pointer](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0138-copy-list-with-random-pointer) |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0560-subarray-sum-equals-k](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0560-subarray-sum-equals-k) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
@@ -186,6 +187,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Linked List
 |  |
 | ------- |
+| [0138-copy-list-with-random-pointer](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0138-copy-list-with-random-pointer) |
 | [0206-reverse-linked-list](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0206-reverse-linked-list) |
 | [0328-odd-even-linked-list](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0328-odd-even-linked-list) |
 | [2216-delete-the-middle-node-of-a-linked-list](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/2216-delete-the-middle-node-of-a-linked-list) |
