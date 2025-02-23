@@ -23,12 +23,13 @@ public:
         // If both Traversal returns Nodes; therefore, the Curr_Node is the LCA for p and q
         if(LeftChild && RightChild){
             return Curr_Node;
-        }
-
+        }else if(LeftChild){          
         // Otherwise return the non-null Recursive approach  
         //return the non-null child (either LeftChild or RightChild)
-        return (LeftChild)? LeftChild : RightChild;
-
+            return LeftChild;
+        }else {
+            return RightChild;
+        }
     }
 };
 
