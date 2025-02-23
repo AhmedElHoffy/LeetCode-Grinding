@@ -38,6 +38,7 @@ public:
 
             Curr = Curr->next;
         }
-        return Old_to_Copy_Map[head];
+        Node* NewHead = Old_to_Copy_Map[head];
+        return NewHead;
     }
 };
