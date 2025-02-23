@@ -23,18 +23,21 @@ public:
         
         Node* Curr = head;
         while(Curr!=nullptr){
-            //Node* NewCopy = new  Node(Curr->val);
-            Old_to_Copy_Map[Curr] = new  Node(Curr->val);
+            Node* NewCopy = new  Node(Curr->val);
+            Old_to_Copy_Map[Curr] = NewCopy;
+            //Old_to_Copy_Map[Curr] = new  Node(Curr->val);
             Curr = Curr->next;
         }
 
         Curr = head;
         while(Curr!=nullptr){
-            //Node* temp = Old_to_Copy_Map[Curr];
-            Old_to_Copy_Map[Curr]->next = Old_to_Copy_Map[Curr->next] ;
-            Old_to_Copy_Map[Curr]->random = Old_to_Copy_Map[Curr->random] ;
-            //temp->next   = (Curr->next)   ?  Old_to_Copy_Map[Curr->next] : nullptr;
-            //temp->random = (Curr->random) ?  Old_to_Copy_Map[Curr->random] : nullptr;
+            Node* temp = Old_to_Copy_Map[Curr];
+            
+            temp->next   = (Curr->next)   ?  Old_to_Copy_Map[Curr->next] : nullptr;
+            temp->random = (Curr->random) ?  Old_to_Copy_Map[Curr->random] : nullptr;
+
+            //Old_to_Copy_Map[Curr]->next = Old_to_Copy_Map[Curr->next] ;
+            //Old_to_Copy_Map[Curr]->random = Old_to_Copy_Map[Curr->random] ;
 
             Curr = Curr->next;
         }
