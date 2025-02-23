@@ -1,10 +1,11 @@
 class Solution {
 public:
     string simplifyPath(string path) {
-        int n = path.length();
-        stack<string>Dir_Stk;
+         int n = path.length();
+        stack<string> Dir_Stk;
         string Curr_Dir;
-        for(int i = 0; i < n; i++) {
+        
+        for (int i = 0; i < n; i++) {
             if (path[i] == '/') {
                 if (!Curr_Dir.empty()) {
                     if (Curr_Dir == "..") {
@@ -12,13 +13,13 @@ public:
                     } else if (Curr_Dir != ".") {
                         Dir_Stk.push(Curr_Dir);
                     }
-                    Curr_Dir = "";
+                    Curr_Dir.clear();  // Reset Curr_Dir for the next directory
                 }
             } else {
                 Curr_Dir += path[i];
             }
         }
-        // Process the last directory entered in the stack
+        
         // Process the last directory segment if any
         if (!Curr_Dir.empty()) {
             if (Curr_Dir == "..") {
@@ -29,12 +30,12 @@ public:
         }
 
         string Result;
-        while(!Dir_Stk.empty()){
+        while (!Dir_Stk.empty()) {
             Result = "/" + Dir_Stk.top() + Result;
             Dir_Stk.pop();
         }
 
-         return (Result.empty()) ?  "/":Result;
+        return Result.empty() ? "/" : Result; // Ensure root is returned if stack is empty
     }
 };
 
