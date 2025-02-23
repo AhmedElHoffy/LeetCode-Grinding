@@ -23,6 +23,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0071-simplify-path](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0071-simplify-path) |
 | [0125-valid-palindrome](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0125-valid-palindrome) |
 | [0127-word-ladder](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0127-word-ladder) |
 | [0151-reverse-words-in-a-string](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0151-reverse-words-in-a-string) |
@@ -154,6 +155,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Stack
 |  |
 | ------- |
+| [0071-simplify-path](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0071-simplify-path) |
 | [0227-basic-calculator-ii](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0227-basic-calculator-ii) |
 | [0364-nested-list-weight-sum-ii](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0364-nested-list-weight-sum-ii) |
 | [0394-decode-string](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0394-decode-string) |
