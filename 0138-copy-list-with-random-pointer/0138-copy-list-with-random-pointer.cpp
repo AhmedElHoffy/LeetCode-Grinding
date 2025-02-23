@@ -31,8 +31,10 @@ public:
         Curr = head;
         while(Curr!=nullptr){
             Node* temp = Old_to_Copy_Map[Curr];
-            temp->next   = (Curr->next)   ?  Old_to_Copy_Map[Curr->next] : nullptr;
-            temp->random = (Curr->random) ?  Old_to_Copy_Map[Curr->random] : nullptr;
+            Old_to_Copy_Map[Curr]->next = Old_to_Copy_Map[Curr->next] ;
+            Old_to_Copy_Map[Curr]->random = Old_to_Copy_Map[Curr->random] ;
+            //temp->next   = (Curr->next)   ?  Old_to_Copy_Map[Curr->next] : nullptr;
+            //temp->random = (Curr->random) ?  Old_to_Copy_Map[Curr->random] : nullptr;
 
             Curr = Curr->next;
         }
