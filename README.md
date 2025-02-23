@@ -155,6 +155,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0227-basic-calculator-ii](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0227-basic-calculator-ii) |
+| [0364-nested-list-weight-sum-ii](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0364-nested-list-weight-sum-ii) |
 | [0394-decode-string](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0394-decode-string) |
 | [0735-asteroid-collision](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0735-asteroid-collision) |
 | [1371-minimum-remove-to-make-valid-parentheses](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1371-minimum-remove-to-make-valid-parentheses) |
@@ -212,6 +213,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0127-word-ladder](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0127-word-ladder) |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0339-nested-list-weight-sum](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0339-nested-list-weight-sum) |
+| [0364-nested-list-weight-sum-ii](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0364-nested-list-weight-sum-ii) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 ## Randomized
 |  |
@@ -237,6 +239,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0339-nested-list-weight-sum](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0339-nested-list-weight-sum) |
+| [0364-nested-list-weight-sum-ii](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0364-nested-list-weight-sum-ii) |
 | [0543-diameter-of-binary-tree](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0543-diameter-of-binary-tree) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 ## Binary Tree
