@@ -13,7 +13,7 @@ public:
                 Result.push_back(Curr_Interval);
                 Curr_Interval = Intervals[i];
             }else{
-                if( Curr_Interval[1] <= Intervals[i][1] ){
+                if( Curr_Interval[1] < Intervals[i][1] ){
                     Curr_Interval[1] = Intervals[i][1];
                 }
 
