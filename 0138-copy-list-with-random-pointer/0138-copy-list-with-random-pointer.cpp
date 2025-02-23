@@ -23,8 +23,8 @@ public:
         
         Node* Curr = head;
         while(Curr!=nullptr){
-            Node* NewCopy = new  Node(Curr->val);
-            Old_to_Copy_Map[Curr] = NewCopy;
+            //Node* NewCopy = new  Node(Curr->val);
+            Old_to_Copy_Map[Curr] = new  Node(Curr->val);
             Curr = Curr->next;
         }
 
