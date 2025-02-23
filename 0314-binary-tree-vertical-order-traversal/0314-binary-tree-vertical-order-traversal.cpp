@@ -16,20 +16,20 @@ public:
        vector<vector<int>>Result;
        if(!root) return Result;
 
-       queue<tuple<TreeNode*,int,int>>BFS_Q;
-       BFS_Q.push({root,0,0});
+       queue<pair<TreeNode*,int>>BFS_Q;
+       BFS_Q.push({root,0});
        map<int,vector<int>>HashMap;
        while(!BFS_Q.empty()){
-        auto [Curr_Node, X_Idx, Y_Idx] = BFS_Q.front();
+        auto [Curr_Node, X_Idx] = BFS_Q.front();
         HashMap[X_Idx].push_back(Curr_Node->val);
         BFS_Q.pop();
         
         if(Curr_Node->left){
-            BFS_Q.push({Curr_Node->left,X_Idx-1,Y_Idx+1});
+            BFS_Q.push({Curr_Node->left,X_Idx-1});
         }
 
         if(Curr_Node->right){
-            BFS_Q.push({Curr_Node->right,X_Idx+1,Y_Idx+1});
+            BFS_Q.push({Curr_Node->right,X_Idx+1});
         }
 
        }
