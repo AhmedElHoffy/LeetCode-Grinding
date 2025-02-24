@@ -114,6 +114,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0127-word-ladder](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0127-word-ladder) |
 | [0138-copy-list-with-random-pointer](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0138-copy-list-with-random-pointer) |
+| [0146-lru-cache](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0146-lru-cache) |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0560-subarray-sum-equals-k](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0560-subarray-sum-equals-k) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
@@ -177,6 +178,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Design
 |  |
 | ------- |
+| [0146-lru-cache](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0146-lru-cache) |
 | [0969-number-of-recent-calls](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0969-number-of-recent-calls) |
 | [2413-smallest-number-in-infinite-set](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/2413-smallest-number-in-infinite-set) |
 ## Queue
@@ -192,6 +194,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0138-copy-list-with-random-pointer](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0138-copy-list-with-random-pointer) |
+| [0146-lru-cache](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0146-lru-cache) |
 | [0206-reverse-linked-list](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0206-reverse-linked-list) |
 | [0328-odd-even-linked-list](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0328-odd-even-linked-list) |
 | [2216-delete-the-middle-node-of-a-linked-list](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/2216-delete-the-middle-node-of-a-linked-list) |
@@ -267,4 +270,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1028-interval-list-intersections](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1028-interval-list-intersections) |
+## Doubly-Linked List
+|  |
+| ------- |
+| [0146-lru-cache](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0146-lru-cache) |
 <!---LeetCode Topics End-->
