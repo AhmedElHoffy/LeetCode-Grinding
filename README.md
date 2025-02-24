@@ -63,6 +63,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0283-move-zeroes](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0283-move-zeroes) |
 | [0300-longest-increasing-subsequence](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0300-longest-increasing-subsequence) |
 | [0334-increasing-triplet-subsequence](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0334-increasing-triplet-subsequence) |
+| [0347-top-k-frequent-elements](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0347-top-k-frequent-elements) |
 | [0560-subarray-sum-equals-k](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0560-subarray-sum-equals-k) |
 | [0605-can-place-flowers](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0605-can-place-flowers) |
 | [0643-maximum-average-subarray-i](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0643-maximum-average-subarray-i) |
@@ -120,6 +121,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0138-copy-list-with-random-pointer](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0138-copy-list-with-random-pointer) |
 | [0146-lru-cache](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0146-lru-cache) |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0314-binary-tree-vertical-order-traversal) |
+| [0347-top-k-frequent-elements](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0347-top-k-frequent-elements) |
 | [0560-subarray-sum-equals-k](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0560-subarray-sum-equals-k) |
 | [0721-accounts-merge](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0721-accounts-merge) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
@@ -137,6 +139,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0088-merge-sorted-array](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0088-merge-sorted-array) |
 | [0215-kth-largest-element-in-an-array](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0215-kth-largest-element-in-an-array) |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0314-binary-tree-vertical-order-traversal) |
+| [0347-top-k-frequent-elements](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0347-top-k-frequent-elements) |
 | [0721-accounts-merge](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0721-accounts-merge) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1777-determine-if-two-strings-are-close](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1777-determine-if-two-strings-are-close) |
@@ -152,6 +155,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Counting
 |  |
 | ------- |
+| [0347-top-k-frequent-elements](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0347-top-k-frequent-elements) |
 | [1777-determine-if-two-strings-are-close](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1777-determine-if-two-strings-are-close) |
 ## Matrix
 |  |
@@ -209,10 +213,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0215-kth-largest-element-in-an-array) |
+| [0347-top-k-frequent-elements](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0347-top-k-frequent-elements) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0215-kth-largest-element-in-an-array) |
+| [0347-top-k-frequent-elements](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0347-top-k-frequent-elements) |
 | [2413-smallest-number-in-infinite-set](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/2413-smallest-number-in-infinite-set) |
 | [2553-total-cost-to-hire-k-workers](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/2553-total-cost-to-hire-k-workers) |
 | [2636-maximum-subsequence-score](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/2636-maximum-subsequence-score) |
@@ -220,6 +226,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0215-kth-largest-element-in-an-array) |
+| [0347-top-k-frequent-elements](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0347-top-k-frequent-elements) |
 ## Ordered Set
 |  |
 | ------- |
@@ -286,4 +293,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0721-accounts-merge](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0721-accounts-merge) |
+## Bucket Sort
+|  |
+| ------- |
+| [0347-top-k-frequent-elements](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0347-top-k-frequent-elements) |
 <!---LeetCode Topics End-->
