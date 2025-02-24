@@ -30,6 +30,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0127-word-ladder](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0127-word-ladder) |
 | [0151-reverse-words-in-a-string](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0151-reverse-words-in-a-string) |
 | [0227-basic-calculator-ii](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0227-basic-calculator-ii) |
+| [0249-group-shifted-strings](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0249-group-shifted-strings) |
 | [0345-reverse-vowels-of-a-string](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0345-reverse-vowels-of-a-string) |
 | [0392-is-subsequence](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0392-is-subsequence) |
 | [0394-decode-string](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0394-decode-string) |
@@ -62,6 +63,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0162-find-peak-element](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0162-find-peak-element) |
 | [0215-kth-largest-element-in-an-array](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0215-kth-largest-element-in-an-array) |
 | [0238-product-of-array-except-self](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0238-product-of-array-except-self) |
+| [0249-group-shifted-strings](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0249-group-shifted-strings) |
 | [0283-move-zeroes](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0283-move-zeroes) |
 | [0300-longest-increasing-subsequence](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0300-longest-increasing-subsequence) |
 | [0334-increasing-triplet-subsequence](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0334-increasing-triplet-subsequence) |
@@ -125,6 +127,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0133-clone-graph](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0133-clone-graph) |
 | [0138-copy-list-with-random-pointer](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0138-copy-list-with-random-pointer) |
 | [0146-lru-cache](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0146-lru-cache) |
+| [0249-group-shifted-strings](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0249-group-shifted-strings) |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0347-top-k-frequent-elements](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0347-top-k-frequent-elements) |
 | [0560-subarray-sum-equals-k](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0560-subarray-sum-equals-k) |
