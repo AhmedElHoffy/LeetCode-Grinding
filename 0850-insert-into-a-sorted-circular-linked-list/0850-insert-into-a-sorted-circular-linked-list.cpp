@@ -22,48 +22,49 @@ public:
 class Solution {
 public:
     Node* insert(Node* head, int insertVal) {
-        // Case 1: Empty List
+        // Case 1: Empty List → Create a new circular node
         if (!head) {
-            Node* newNode = new Node(insertVal);
-            newNode->next = newNode;  // Circular self-loop
-            return newNode;
+            head = new Node(insertVal);
+            head->next = head; // Circular reference
+            return head;
         }
 
-        // Case 2: Single Node List
-        if (head->next == head) {
+        // Case 2: Single-node List → Insert new node and link it
+        if (!head->next) {
             Node* newNode = new Node(insertVal, head);
             head->next = newNode;
             return head;
         }
 
-        // Case 3: General Case (Find Insertion Point)
-        Node* curr = head;
+        // Case 3: General case (Find insertion point)
+        Node* Curr = head, *Prev = nullptr;
 
         while (true) {
 
-            // Insert in the correct place in sorted order
-            if (curr->val <= insertVal && insertVal <= curr->next->val) {
+            // Insert in correct sorted position
+            if (Curr->val <= insertVal && insertVal <= Curr->next->val) {
                 break;
             }
 
-            // Handle the max-to-min wraparound case (end of list)
-            if (curr->val > curr->next->val && 
-                (insertVal >= curr->val || insertVal <= curr->next->val)) {
+            // Handle wrap-around case (max-to-min transition)
+            if (Curr->val > Curr->next->val && 
+                (insertVal >= Curr->val || insertVal <= Curr->next->val)) {
                 break;
             }
 
-            // If we have completed one full loop, insert anywhere
-            if (curr->next == head) {
+            // If we have completed a full loop without inserting, insert anywhere
+            if (Curr->next == head) {
                 break;
             }
 
-            curr = curr->next;
+            Prev = Curr;
+            Curr = Curr->next;
         }
 
         // Insert new node
-        Node* newNode = new Node(insertVal, curr->next);
-        curr->next = newNode;
+        Node* newNode = new Node(insertVal, Curr->next);
+        Curr->next = newNode;
+
         return head;
     }
-    
 };
