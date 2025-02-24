@@ -48,6 +48,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0227-basic-calculator-ii](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0227-basic-calculator-ii) |
+| [0670-maximum-swap](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0670-maximum-swap) |
 | [0912-random-pick-with-weight](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0912-random-pick-with-weight) |
 | [1146-greatest-common-divisor-of-strings](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1146-greatest-common-divisor-of-strings) |
 ## Array
@@ -91,6 +92,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0334-increasing-triplet-subsequence](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0334-increasing-triplet-subsequence) |
 | [0605-can-place-flowers](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0605-can-place-flowers) |
 | [0649-dota2-senate](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0649-dota2-senate) |
+| [0670-maximum-swap](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0670-maximum-swap) |
 | [0680-valid-palindrome-ii](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0680-valid-palindrome-ii) |
 | [2636-maximum-subsequence-score](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/2636-maximum-subsequence-score) |
 ## Prefix Sum
