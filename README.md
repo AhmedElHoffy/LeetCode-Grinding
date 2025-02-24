@@ -49,6 +49,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0227-basic-calculator-ii](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0227-basic-calculator-ii) |
+| [0523-continuous-subarray-sum](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0523-continuous-subarray-sum) |
 | [0670-maximum-swap](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0670-maximum-swap) |
 | [0912-random-pick-with-weight](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0912-random-pick-with-weight) |
 | [1146-greatest-common-divisor-of-strings](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1146-greatest-common-divisor-of-strings) |
@@ -68,6 +69,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0300-longest-increasing-subsequence](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0300-longest-increasing-subsequence) |
 | [0334-increasing-triplet-subsequence](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0334-increasing-triplet-subsequence) |
 | [0347-top-k-frequent-elements](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0347-top-k-frequent-elements) |
+| [0523-continuous-subarray-sum](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0523-continuous-subarray-sum) |
 | [0560-subarray-sum-equals-k](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0560-subarray-sum-equals-k) |
 | [0605-can-place-flowers](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0605-can-place-flowers) |
 | [0643-maximum-average-subarray-i](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0643-maximum-average-subarray-i) |
@@ -101,6 +103,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0238-product-of-array-except-self](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0238-product-of-array-except-self) |
+| [0523-continuous-subarray-sum](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0523-continuous-subarray-sum) |
 | [0560-subarray-sum-equals-k](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0560-subarray-sum-equals-k) |
 | [0724-find-pivot-index](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0724-find-pivot-index) |
 | [0912-random-pick-with-weight](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0912-random-pick-with-weight) |
@@ -130,6 +133,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0249-group-shifted-strings](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0249-group-shifted-strings) |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0347-top-k-frequent-elements](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0347-top-k-frequent-elements) |
+| [0523-continuous-subarray-sum](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0523-continuous-subarray-sum) |
 | [0560-subarray-sum-equals-k](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0560-subarray-sum-equals-k) |
 | [0721-accounts-merge](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0721-accounts-merge) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
