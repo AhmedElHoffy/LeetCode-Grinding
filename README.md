@@ -127,6 +127,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0347-top-k-frequent-elements](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0347-top-k-frequent-elements) |
 | [0560-subarray-sum-equals-k](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0560-subarray-sum-equals-k) |
 | [0721-accounts-merge](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0721-accounts-merge) |
+| [0893-all-nodes-distance-k-in-binary-tree](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1319-unique-number-of-occurrences](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1319-unique-number-of-occurrences) |
 | [1392-find-the-difference-of-two-arrays](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1392-find-the-difference-of-two-arrays) |
@@ -243,6 +244,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0339-nested-list-weight-sum](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0339-nested-list-weight-sum) |
 | [0364-nested-list-weight-sum-ii](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0364-nested-list-weight-sum-ii) |
 | [0721-accounts-merge](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0721-accounts-merge) |
+| [0893-all-nodes-distance-k-in-binary-tree](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 ## Randomized
 |  |
@@ -259,6 +261,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0543-diameter-of-binary-tree](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0543-diameter-of-binary-tree) |
+| [0893-all-nodes-distance-k-in-binary-tree](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1790-lowest-common-ancestor-of-a-binary-tree-iii](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1790-lowest-common-ancestor-of-a-binary-tree-iii) |
 ## Depth-First Search
@@ -272,6 +275,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0364-nested-list-weight-sum-ii](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0364-nested-list-weight-sum-ii) |
 | [0543-diameter-of-binary-tree](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0543-diameter-of-binary-tree) |
 | [0721-accounts-merge](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0721-accounts-merge) |
+| [0893-all-nodes-distance-k-in-binary-tree](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 ## Binary Tree
 |  |
@@ -280,6 +284,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0543-diameter-of-binary-tree](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0543-diameter-of-binary-tree) |
+| [0893-all-nodes-distance-k-in-binary-tree](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1790-lowest-common-ancestor-of-a-binary-tree-iii](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1790-lowest-common-ancestor-of-a-binary-tree-iii) |
 ## Binary Search Tree
