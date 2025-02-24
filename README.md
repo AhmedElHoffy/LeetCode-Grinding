@@ -53,6 +53,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0001-two-sum) |
 | [0011-container-with-most-water](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0011-container-with-most-water) |
 | [0031-next-permutation](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0031-next-permutation) |
 | [0056-merge-intervals](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0056-merge-intervals) |
@@ -117,6 +118,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Hash Table
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0001-two-sum) |
 | [0127-word-ladder](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0127-word-ladder) |
 | [0133-clone-graph](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0133-clone-graph) |
 | [0138-copy-list-with-random-pointer](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0138-copy-list-with-random-pointer) |
