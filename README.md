@@ -14,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0408-valid-word-abbreviation](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0408-valid-word-abbreviation) |
 | [0443-string-compression](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0443-string-compression) |
 | [0680-valid-palindrome-ii](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0680-valid-palindrome-ii) |
+| [1028-interval-list-intersections](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1028-interval-list-intersections) |
 | [1790-lowest-common-ancestor-of-a-binary-tree-iii](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1790-lowest-common-ancestor-of-a-binary-tree-iii) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1798-max-number-of-k-sum-pairs) |
 | [1894-merge-strings-alternately](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1894-merge-strings-alternately) |
@@ -65,6 +66,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0724-find-pivot-index](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0724-find-pivot-index) |
 | [0735-asteroid-collision](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0735-asteroid-collision) |
 | [0912-random-pick-with-weight](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0912-random-pick-with-weight) |
+| [1028-interval-list-intersections](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1028-interval-list-intersections) |
 | [1046-max-consecutive-ones-iii](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1046-max-consecutive-ones-iii) |
 | [1319-unique-number-of-occurrences](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1319-unique-number-of-occurrences) |
 | [1392-find-the-difference-of-two-arrays](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1392-find-the-difference-of-two-arrays) |
@@ -261,4 +263,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
+## Line Sweep
+|  |
+| ------- |
+| [1028-interval-list-intersections](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1028-interval-list-intersections) |
 <!---LeetCode Topics End-->
