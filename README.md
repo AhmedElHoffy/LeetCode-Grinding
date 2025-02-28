@@ -16,6 +16,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0443-string-compression](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0443-string-compression) |
 | [0680-valid-palindrome-ii](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0680-valid-palindrome-ii) |
 | [1028-interval-list-intersections](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1028-interval-list-intersections) |
+| [1713-dot-product-of-two-sparse-vectors](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1713-dot-product-of-two-sparse-vectors) |
 | [1790-lowest-common-ancestor-of-a-binary-tree-iii](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1790-lowest-common-ancestor-of-a-binary-tree-iii) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1798-max-number-of-k-sum-pairs) |
 | [1894-merge-strings-alternately](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1894-merge-strings-alternately) |
@@ -86,6 +87,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1392-find-the-difference-of-two-arrays](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1392-find-the-difference-of-two-arrays) |
 | [1528-kids-with-the-greatest-number-of-candies](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1528-kids-with-the-greatest-number-of-candies) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
+| [1713-dot-product-of-two-sparse-vectors](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1713-dot-product-of-two-sparse-vectors) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1798-max-number-of-k-sum-pairs) |
 | [1833-find-the-highest-altitude](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1833-find-the-highest-altitude) |
 | [1909-buildings-with-an-ocean-view](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1909-buildings-with-an-ocean-view) |
@@ -145,6 +147,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1319-unique-number-of-occurrences](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1319-unique-number-of-occurrences) |
 | [1392-find-the-difference-of-two-arrays](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1392-find-the-difference-of-two-arrays) |
+| [1713-dot-product-of-two-sparse-vectors](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1713-dot-product-of-two-sparse-vectors) |
 | [1777-determine-if-two-strings-are-close](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1777-determine-if-two-strings-are-close) |
 | [1790-lowest-common-ancestor-of-a-binary-tree-iii](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1790-lowest-common-ancestor-of-a-binary-tree-iii) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1798-max-number-of-k-sum-pairs) |
@@ -208,6 +211,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0146-lru-cache](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0146-lru-cache) |
 | [0969-number-of-recent-calls](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0969-number-of-recent-calls) |
+| [1713-dot-product-of-two-sparse-vectors](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1713-dot-product-of-two-sparse-vectors) |
 | [2413-smallest-number-in-infinite-set](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/2413-smallest-number-in-infinite-set) |
 ## Queue
 |  |
