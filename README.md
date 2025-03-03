@@ -50,6 +50,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0050-powx-n](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0050-powx-n) |
 | [0227-basic-calculator-ii](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0227-basic-calculator-ii) |
 | [0523-continuous-subarray-sum](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0523-continuous-subarray-sum) |
 | [0670-maximum-swap](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0670-maximum-swap) |
@@ -204,6 +205,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Recursion
 |  |
 | ------- |
+| [0050-powx-n](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0050-powx-n) |
 | [0206-reverse-linked-list](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0206-reverse-linked-list) |
 | [0394-decode-string](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0394-decode-string) |
 ## Design
