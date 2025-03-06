@@ -34,7 +34,20 @@ public:
 
 
 
+/*
+\U0001f680 Summary: unordered_map<vector<int>, int> vs. unordered_set<vector<int>>
 
+
+1)- ✅ unordered_map<vector<int>, int> works by default because it only requires == for comparisons.
+
+2)- ❌ unordered_set<vector<int>> does NOT work by default because it requires a hash function.
+
+3)- C++ does NOT provide a default hash function for vector<int>, causing unordered_set to fail.
+
+4)- If using unordered_set<vector<int>>, you must define a custom hash function.
+
+5)- If counting occurrences of vector<int>, unordered_map<vector<int>, int> is the best choice (O(1) lookups).
+*/
 
 
 
