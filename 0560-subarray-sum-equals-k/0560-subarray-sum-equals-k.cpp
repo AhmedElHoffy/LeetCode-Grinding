@@ -11,7 +11,7 @@ public:
             Curr_Sum+=num;
             temp = Curr_Sum - k;
             if(Prefix_SumFreq.find(temp)!=Prefix_SumFreq.end()){
-                counter+=Prefix_SumFreq[temp];
+                counter+=Prefix_SumFreq[temp]; 
             }
                 Prefix_SumFreq[Curr_Sum]++;
         }
