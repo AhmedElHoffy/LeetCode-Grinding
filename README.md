@@ -51,6 +51,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0050-powx-n](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0050-powx-n) |
+| [0070-climbing-stairs](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0070-climbing-stairs) |
 | [0227-basic-calculator-ii](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0227-basic-calculator-ii) |
 | [0523-continuous-subarray-sum](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0523-continuous-subarray-sum) |
 | [0670-maximum-swap](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0670-maximum-swap) |
@@ -130,6 +131,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0070-climbing-stairs](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0070-climbing-stairs) |
 | [0300-longest-increasing-subsequence](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0300-longest-increasing-subsequence) |
 | [0392-is-subsequence](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0392-is-subsequence) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
@@ -348,4 +350,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1014-k-closest-points-to-origin](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1014-k-closest-points-to-origin) |
+## Memoization
+|  |
+| ------- |
+| [0070-climbing-stairs](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0070-climbing-stairs) |
 <!---LeetCode Topics End-->
