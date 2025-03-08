@@ -67,6 +67,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0031-next-permutation](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0031-next-permutation) |
 | [0056-merge-intervals](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0056-merge-intervals) |
 | [0088-merge-sorted-array](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0088-merge-sorted-array) |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0162-find-peak-element](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0162-find-peak-element) |
 | [0215-kth-largest-element-in-an-array](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0215-kth-largest-element-in-an-array) |
 | [0238-product-of-array-except-self](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0238-product-of-array-except-self) |
@@ -134,6 +135,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0070-climbing-stairs](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0070-climbing-stairs) |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0300-longest-increasing-subsequence](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0300-longest-increasing-subsequence) |
 | [0392-is-subsequence](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0392-is-subsequence) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
