@@ -43,6 +43,49 @@ public:
 
 
 
+//Generalized Approach for an Increasing k-Subsequence 
+
+//class Solution {
+//public:
+   // bool increasingKSubsequence(vector<int>& nums, int k) {
+     //   vector<int> seq(k-1, INT_MAX); // Store the smallest increasing sequence of length k-1
+
+       // for (int num : nums) {
+            //for (int i = 0; i < k-1; i++) {
+                //if (num <= seq[i]) {  // Update the smallest possible value at position i
+                  //  seq[i] = num;
+                    //break; // Stop here, don't update further positions
+                //}
+                //if (i == k-2) { // If we filled all k-1 slots, we found an increasing k-subsequence
+             //       return true;
+               // }
+            //}
+        //}
+        //return false;
+    //}
+//};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
