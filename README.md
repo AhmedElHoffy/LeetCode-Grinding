@@ -75,6 +75,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0283-move-zeroes](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0283-move-zeroes) |
 | [0300-longest-increasing-subsequence](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0300-longest-increasing-subsequence) |
 | [0334-increasing-triplet-subsequence](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0334-increasing-triplet-subsequence) |
+| [0346-moving-average-from-data-stream](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0346-moving-average-from-data-stream) |
 | [0347-top-k-frequent-elements](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0347-top-k-frequent-elements) |
 | [0523-continuous-subarray-sum](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0523-continuous-subarray-sum) |
 | [0560-subarray-sum-equals-k](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0560-subarray-sum-equals-k) |
@@ -224,17 +225,20 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0146-lru-cache](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0146-lru-cache) |
+| [0346-moving-average-from-data-stream](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0346-moving-average-from-data-stream) |
 | [0969-number-of-recent-calls](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0969-number-of-recent-calls) |
 | [1713-dot-product-of-two-sparse-vectors](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1713-dot-product-of-two-sparse-vectors) |
 | [2413-smallest-number-in-infinite-set](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/2413-smallest-number-in-infinite-set) |
 ## Queue
 |  |
 | ------- |
+| [0346-moving-average-from-data-stream](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0346-moving-average-from-data-stream) |
 | [0649-dota2-senate](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0649-dota2-senate) |
 | [0969-number-of-recent-calls](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0969-number-of-recent-calls) |
 ## Data Stream
 |  |
 | ------- |
+| [0346-moving-average-from-data-stream](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0346-moving-average-from-data-stream) |
 | [0969-number-of-recent-calls](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0969-number-of-recent-calls) |
 ## Linked List
 |  |
