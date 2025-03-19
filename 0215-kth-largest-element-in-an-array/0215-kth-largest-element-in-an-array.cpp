@@ -2,31 +2,25 @@ class Solution {
 private:
     int Partition_QucikSelect(vector<int> & nums, int Left ,  int Right){
         int Pivot_Idx= Right;
-
         int i = Left, j = Right-1;
 
         while ( i <= j){
-
             //// Move i until we find a larger element
             while( i <= j &&  nums[i] < nums[Pivot_Idx]){
                 i++;
             }
-
            // Move j until we find a smaller element 
             while( i<=j && nums[j] > nums[Pivot_Idx]){
                 j--;
             }
-
             if(i <= j){
                 swap(nums[i],nums[j]);
                 i++;
                 j--;
             }
-
         }
         swap(nums[i],nums[Right]);
         return i;
-
     }
 
     int Quick_Select(vector<int>& nums ,int Left, int Right, int k){
@@ -50,6 +44,7 @@ public:
         int n = nums.size();
 
         return Quick_Select(nums, 0 , n-1 , n-k);
+        //return Quick_Select(nums,0,n-1,k-1); // for Kth Smallest Element
     }
 };
 
