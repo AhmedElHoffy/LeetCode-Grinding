@@ -148,6 +148,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0072-edit-distance](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0072-edit-distance) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0300-longest-increasing-subsequence](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0300-longest-increasing-subsequence) |
+| [0338-counting-bits](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0338-counting-bits) |
 | [0392-is-subsequence](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0392-is-subsequence) |
 | [0435-non-overlapping-intervals](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0435-non-overlapping-intervals) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
@@ -395,6 +396,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0136-single-number](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0136-single-number) |
+| [0338-counting-bits](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0338-counting-bits) |
 | [1441-minimum-flips-to-make-a-or-b-equal-to-c](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1441-minimum-flips-to-make-a-or-b-equal-to-c) |
 ## Trie
 |  |
