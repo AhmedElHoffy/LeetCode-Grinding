@@ -85,6 +85,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0721-accounts-merge](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0721-accounts-merge) |
 | [0724-find-pivot-index](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0724-find-pivot-index) |
 | [0735-asteroid-collision](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0735-asteroid-collision) |
+| [0739-daily-temperatures](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0739-daily-temperatures) |
 | [0907-koko-eating-bananas](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0907-koko-eating-bananas) |
 | [0912-random-pick-with-weight](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0912-random-pick-with-weight) |
 | [0932-monotonic-array](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0932-monotonic-array) |
@@ -214,6 +215,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0364-nested-list-weight-sum-ii](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0364-nested-list-weight-sum-ii) |
 | [0394-decode-string](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0394-decode-string) |
 | [0735-asteroid-collision](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0735-asteroid-collision) |
+| [0739-daily-temperatures](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0739-daily-temperatures) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1371-minimum-remove-to-make-valid-parentheses](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1371-minimum-remove-to-make-valid-parentheses) |
 | [1909-buildings-with-an-ocean-view](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1909-buildings-with-an-ocean-view) |
@@ -300,6 +302,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Monotonic Stack
 |  |
 | ------- |
+| [0739-daily-temperatures](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0739-daily-temperatures) |
 | [1909-buildings-with-an-ocean-view](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1909-buildings-with-an-ocean-view) |
 ## Tree
 |  |
