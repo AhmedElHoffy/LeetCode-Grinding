@@ -385,4 +385,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0070-climbing-stairs](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0070-climbing-stairs) |
+## Bit Manipulation
+|  |
+| ------- |
+| [1441-minimum-flips-to-make-a-or-b-equal-to-c](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1441-minimum-flips-to-make-a-or-b-equal-to-c) |
 <!---LeetCode Topics End-->
