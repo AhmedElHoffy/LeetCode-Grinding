@@ -78,6 +78,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0334-increasing-triplet-subsequence](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0334-increasing-triplet-subsequence) |
 | [0346-moving-average-from-data-stream](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0346-moving-average-from-data-stream) |
 | [0347-top-k-frequent-elements](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0347-top-k-frequent-elements) |
+| [0435-non-overlapping-intervals](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0435-non-overlapping-intervals) |
 | [0523-continuous-subarray-sum](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0523-continuous-subarray-sum) |
 | [0560-subarray-sum-equals-k](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0560-subarray-sum-equals-k) |
 | [0605-can-place-flowers](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0605-can-place-flowers) |
@@ -110,6 +111,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0011-container-with-most-water](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0011-container-with-most-water) |
 | [0334-increasing-triplet-subsequence](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0334-increasing-triplet-subsequence) |
+| [0435-non-overlapping-intervals](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0435-non-overlapping-intervals) |
 | [0605-can-place-flowers](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0605-can-place-flowers) |
 | [0649-dota2-senate](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0649-dota2-senate) |
 | [0670-maximum-swap](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0670-maximum-swap) |
@@ -143,6 +145,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0300-longest-increasing-subsequence](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0300-longest-increasing-subsequence) |
 | [0392-is-subsequence](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0392-is-subsequence) |
+| [0435-non-overlapping-intervals](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0435-non-overlapping-intervals) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 ## Hash Table
 |  |
@@ -177,6 +180,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0215-kth-largest-element-in-an-array](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0215-kth-largest-element-in-an-array) |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0347-top-k-frequent-elements](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0347-top-k-frequent-elements) |
+| [0435-non-overlapping-intervals](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0435-non-overlapping-intervals) |
 | [0721-accounts-merge](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0721-accounts-merge) |
 | [1014-k-closest-points-to-origin](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1014-k-closest-points-to-origin) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
