@@ -29,6 +29,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0071-simplify-path](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0071-simplify-path) |
+| [0072-edit-distance](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0072-edit-distance) |
 | [0125-valid-palindrome](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0125-valid-palindrome) |
 | [0127-word-ladder](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0127-word-ladder) |
 | [0151-reverse-words-in-a-string](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0151-reverse-words-in-a-string) |
@@ -143,6 +144,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0070-climbing-stairs](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0070-climbing-stairs) |
+| [0072-edit-distance](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0072-edit-distance) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0300-longest-increasing-subsequence](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0300-longest-increasing-subsequence) |
 | [0392-is-subsequence](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0392-is-subsequence) |
