@@ -71,6 +71,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0056-merge-intervals](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0056-merge-intervals) |
 | [0088-merge-sorted-array](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0088-merge-sorted-array) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0121-best-time-to-buy-and-sell-stock) |
+| [0136-single-number](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0136-single-number) |
 | [0162-find-peak-element](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0162-find-peak-element) |
 | [0215-kth-largest-element-in-an-array](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0215-kth-largest-element-in-an-array) |
 | [0238-product-of-array-except-self](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0238-product-of-array-except-self) |
@@ -393,6 +394,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Bit Manipulation
 |  |
 | ------- |
+| [0136-single-number](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0136-single-number) |
 | [1441-minimum-flips-to-make-a-or-b-equal-to-c](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1441-minimum-flips-to-make-a-or-b-equal-to-c) |
 ## Trie
 |  |
