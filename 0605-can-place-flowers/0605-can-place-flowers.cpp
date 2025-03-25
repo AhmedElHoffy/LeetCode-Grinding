@@ -12,9 +12,6 @@ public:
                 Available_Slots++;
                 if (Available_Slots >= n) return true; // Return early
             }
-            if(Available_Slots>=n){
-                break;
-            }
         }
         return (Available_Slots>=n) ? true:false;
     }
