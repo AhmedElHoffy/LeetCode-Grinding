@@ -90,6 +90,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0724-find-pivot-index](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0724-find-pivot-index) |
 | [0735-asteroid-collision](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0735-asteroid-collision) |
 | [0739-daily-temperatures](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0739-daily-temperatures) |
+| [0747-min-cost-climbing-stairs](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0747-min-cost-climbing-stairs) |
 | [0907-koko-eating-bananas](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0907-koko-eating-bananas) |
 | [0912-random-pick-with-weight](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0912-random-pick-with-weight) |
 | [0932-monotonic-array](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0932-monotonic-array) |
@@ -151,6 +152,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0338-counting-bits](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0338-counting-bits) |
 | [0392-is-subsequence](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0392-is-subsequence) |
 | [0435-non-overlapping-intervals](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0435-non-overlapping-intervals) |
+| [0747-min-cost-climbing-stairs](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0747-min-cost-climbing-stairs) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 ## Hash Table
 |  |
