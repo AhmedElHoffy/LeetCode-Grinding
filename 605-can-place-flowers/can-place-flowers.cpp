@@ -10,7 +10,7 @@ public:
         }
 
         if(Size>=2){
-            if(flowerbed[0]==0 && flowerbed[1]==0){
+            if(flowerbed[0]==0 && flowerbed[1]==0 && n>0){
                 n--;
                 flowerbed[0]=1;
             }
@@ -26,7 +26,7 @@ public:
             }
         }
 
-        if(flowerbed[Size-1]==0 && flowerbed[Size-2]==0){
+        if(flowerbed[Size-1]==0 && flowerbed[Size-2]==0 && n>0){
                 n--;
                 flowerbed[Size-1]=1;
             }
@@ -37,7 +37,7 @@ public:
             }
         }
 
-        return ( (n<=0) ? true:false) ;
+        return ( (n==0) ? true:false) ;
     }
 };
 
