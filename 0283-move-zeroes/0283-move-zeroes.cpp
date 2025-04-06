@@ -1,19 +1,22 @@
 class Solution {
 private: 
     void Swap_Nums(int &a, int &b){
-        int temp = a;
-            a = b;
-            b = temp;
+        int temp=a;
+        a = b;
+        b = temp;
     }
+
 public:
     void moveZeroes(vector<int>& nums) {
         int n = nums.size();
-        int Last_Non_Zero_Element_Idx=0;
-        for(int i=0 ; i <n ; i++){
+        int Write_Idx=0;
+        for(int i=0; i < n ; i++){
             if(nums[i]!=0){
-                Swap_Nums(nums[i],nums[Last_Non_Zero_Element_Idx]);
-                Last_Non_Zero_Element_Idx++;
+                nums[Write_Idx++] = nums[i];
             }
+        }
+        for(int j=Write_Idx ; j < n ; j++){
+            nums[j]=0;
         }
     }
 };
