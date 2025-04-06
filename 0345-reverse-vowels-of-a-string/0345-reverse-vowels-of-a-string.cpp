@@ -1,37 +1,46 @@
 class Solution {
 private:
-    bool Vowel_Check(char c) {
-        if (c == 'A' || c == 'a' || c == 'E' || c == 'e' ||
-            c == 'I' || c == 'i' || c == 'O' || c == 'o' ||
-            c == 'U' || c == 'u') {
+
+    bool Vowel_Detect_Fn(char ch){
+        if(ch == 'A' || ch == 'a' || ch == 'E' || ch == 'e'||
+           ch == 'I' || ch == 'i' || ch == 'O' || ch == 'o' || 
+           ch == 'U' || ch == 'u'){
             return true;
-        }
-        return false;
+           }
+           return false;
     }
 
-    void swap(char &c1, char &c2){
-        char temp = c1;
-             c1 = c2;
-             c2=temp;
+    void Swap_Chars(char &a, char &b){
+        char temp = a;
+        a = b;
+        b = temp;
     }
 
 public:
-    string reverseVowels(string Str) {
-    int Str_Size= Str.size();
-    vector<int>Vowels_Idx;
-    for(int i=0 ; i < Str_Size ; i++){
-        if(Vowel_Check(Str[i])){
-            Vowels_Idx.push_back(i);
-        }
-    }
-    string Result = Str;
-    int ptr1=0,ptr2=Vowels_Idx.size()-1;
-    while(ptr1<ptr2){
-        swap(Result[Vowels_Idx[ptr1]],Result[Vowels_Idx[ptr2]]);
-        ptr1++;
-        ptr2--;
-    }
-    return Result;
+    string reverseVowels(string &Str) {
+       int n = Str.size();
+
+       int Left_Ptr = 0, Right_Ptr=n-1;
+
+       while(Left_Ptr < Right_Ptr){
+
+         while(Left_Ptr < Right_Ptr  && !Vowel_Detect_Fn(Str[Left_Ptr])){
+            Left_Ptr++;
+         }
+
+        while(Left_Ptr < Right_Ptr  && !Vowel_Detect_Fn(Str[Right_Ptr])){
+            Right_Ptr--;
+         }
+
+         if(Left_Ptr < Right_Ptr){
+            Swap_Chars(Str[Left_Ptr] , Str[Right_Ptr]);
+            Left_Ptr++;
+            Right_Ptr--;
+         }
+
+       }
+
+       return Str;
     }
 };
 
