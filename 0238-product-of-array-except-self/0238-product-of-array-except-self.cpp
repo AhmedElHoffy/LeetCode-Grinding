@@ -1,59 +1,22 @@
 class Solution {
 public:
     vector<int> productExceptSelf(vector<int>& nums) {
-        
-        int nums_Size=  nums.size();
-        vector<int>Result(nums_Size,1);
-        int Curr_Product=1;
-        
-        // Compute Prefix+Product First
-        for(int i = 0 ; i<nums_Size ; i++){
-            Result[i]*=Curr_Product;
-            Curr_Product*=nums[i];;
+        int n = nums.size();
+        vector<int> Result(n,1);
+        int Prefix_Prod=1;
+
+        for(int i = 0 ; i < n ; i++){
+            Result[i] = Prefix_Prod;
+            Prefix_Prod*=nums[i];
         }
 
-        Curr_Product=1;
-        for(int j = nums_Size-1 ; j>=0 ; j--){
-            Result[j]*=Curr_Product;
-            Curr_Product*=nums[j];
+        int Postfix_Prod=1;
+        for(int j=n-1 ; j>=0 ; j--){
+            Result[j]*=Postfix_Prod;
+            Postfix_Prod*=nums[j];
         }
+
         return Result;
-
-       // Slow approach as it uses space complexity O(N)
-        /*int nums_Size=  nums.size();
-        vector<int>Prefix_Product(nums_Size,1);
-        vector<int>Postfix_Product(nums_Size,1);
-
-        int Curr_Product=1;
-        for(int i=1 ; i<nums_Size ; i++){
-            Curr_Product*=nums[i-1];
-            Prefix_Product[i] = Curr_Product;
-        }
-
-        cout<<"Prefix Product Vector Elements are = [ ";
-        for(int x: Prefix_Product){
-            cout<<x <<" ";
-        }
-        cout<<"]"<<endl;
-
-        Curr_Product=1;
-        for(int j=nums_Size-2 ; j>=0 ; j--){
-            Curr_Product*=nums[j+1];
-            Postfix_Product[j] = Curr_Product;
-        }
-
-        cout<<"Post Product Vector Elements are = [ ";
-        for(int x: Postfix_Product){
-            cout<<x <<" ";
-        }
-        cout<<"]"<<endl;
-        
-        vector<int>Result(nums_Size,1);
-        for(int i=0 ; i<nums_Size ; i++){
-            Result[i]=Prefix_Product[i] * Postfix_Product[i];
-        }
-        return Result;
-        */
     }
 };
 
@@ -117,3 +80,71 @@ public:
     }
 };
 */
+
+
+
+
+
+
+
+/*
+
+
+ vector<int> productExceptSelf(vector<int>& nums) {
+        
+        int nums_Size=  nums.size();
+        vector<int>Result(nums_Size,1);
+        int Curr_Product=1;
+        
+        // Compute Prefix+Product First
+        for(int i = 0 ; i<nums_Size ; i++){
+            Result[i]*=Curr_Product;
+            Curr_Product*=nums[i];;
+        }
+
+        Curr_Product=1;
+        for(int j = nums_Size-1 ; j>=0 ; j--){
+            Result[j]*=Curr_Product;
+            Curr_Product*=nums[j];
+        }
+        return Result;
+
+        */
+
+       // Slow approach as it uses space complexity O(N)
+        /*int nums_Size=  nums.size();
+        vector<int>Prefix_Product(nums_Size,1);
+        vector<int>Postfix_Product(nums_Size,1);
+
+        int Curr_Product=1;
+        for(int i=1 ; i<nums_Size ; i++){
+            Curr_Product*=nums[i-1];
+            Prefix_Product[i] = Curr_Product;
+        }
+
+        cout<<"Prefix Product Vector Elements are = [ ";
+        for(int x: Prefix_Product){
+            cout<<x <<" ";
+        }
+        cout<<"]"<<endl;
+
+        Curr_Product=1;
+        for(int j=nums_Size-2 ; j>=0 ; j--){
+            Curr_Product*=nums[j+1];
+            Postfix_Product[j] = Curr_Product;
+        }
+
+        cout<<"Post Product Vector Elements are = [ ";
+        for(int x: Postfix_Product){
+            cout<<x <<" ";
+        }
+        cout<<"]"<<endl;
+        
+        vector<int>Result(nums_Size,1);
+        for(int i=0 ; i<nums_Size ; i++){
+            Result[i]=Prefix_Product[i] * Postfix_Product[i];
+        }
+        return Result;
+        */
+    //}
+    
