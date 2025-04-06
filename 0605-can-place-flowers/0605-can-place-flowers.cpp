@@ -1,43 +1,22 @@
 class Solution {
 public:
-    bool canPlaceFlowers(vector<int>& flowerbed, int n) {
-        int Size = flowerbed.size();
-        
-        if(n==0){
-            return true;
-        }else if(n>Size){
-            return false;
-        }
+    bool canPlaceFlowers(vector<int>& Flowerbed, int n) {
+        int Size = Flowerbed.size();
+        bool Empty_Left, Empty_Right;
 
-        if(Size>=2){
-            if(flowerbed[0]==0 && flowerbed[1]==0 && n>0){
-                n--;
-                flowerbed[0]=1;
-            }
+        for(int i=0 ; i < Size && n>0 ; i++){
+            if(Flowerbed[i]==0){
+                Empty_Left= (i==0 || Flowerbed[i-1]==0);
+                Empty_Right = (i==Size-1 || Flowerbed[i+1]==0);
 
-        for(int i=1 ; i < Size-1 ; i++){
-            cout<<"We are at i = "<<i<<endl;
-            if (n==0)break;
-            if(flowerbed[i]==0 && flowerbed[i-1]==0 && flowerbed[i+1]==0){
-                n--;
-                flowerbed[i]=1;
-                cout<<"FlowerBed at "<<i<<" Changed to 1"<<endl;
-
+                if(Empty_Left && Empty_Right){
+                    Flowerbed[i]=1;
+                    n--;
+                }
             }
         }
 
-        if(flowerbed[Size-1]==0 && flowerbed[Size-2]==0 && n>0){
-                n--;
-                flowerbed[Size-1]=1;
-            }
-        
-        }else if (Size==1){
-            if(flowerbed[0]==0 && n>0){
-                n--;
-            }
-        }
-
-        return ( (n==0) ? true:false) ;
+        return n==0;
     }
 };
 
