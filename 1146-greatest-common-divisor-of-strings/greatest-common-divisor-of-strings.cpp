@@ -1,41 +1,28 @@
 class Solution {
-private:    
-
-    // iterative approach
-    int GCD_Length_iterative(int a, int b){
-        int temp;
+private:
+    int GCD_Length_Fn(int a, int b){
+        int temp=0;
         while(b!=0){
             temp = b;
-            b= a % b;
+            b = a % b;
             a = temp;
         }
         return a;
     }
-
-    // Recursive Approach
-    int GCD_Length_Recursive(int a, int b){
-        if(b==0){
-            return a;
-        }
-        return GCD_Length_Recursive(b,a%b);
-    }
-
 public:
+    string gcdOfStrings(string Str1, string Str2) {
 
-    string gcdOfStrings(string str1, string str2) {
-        int str1_size= str1.size(), str2_size = str2.size();
-
+        int Size_1 = Str1.size(), Size_2 = Str2.size();
         string Result="";
-        if(str1+str2 !=str2+str1){
-            // Not Concatenated of s(t)
-        }else{
-            int GCD_substr_len = GCD_Length_Recursive(str1_size,str2_size);
-            for(int i=0 ; i <GCD_substr_len;i++){
-                Result+=str2[i];
+        int GCD_Len=0;
+        if(Str1+Str2 == Str2+Str1){
+            GCD_Len = GCD_Length_Fn(Size_1,Size_2);
+            for(int i=0 ; i < GCD_Len ; i++){
+                Result+=Str1[i]; // either Str1[1] or Str2[i] because they are already concatanated
             }
         }
+
         return Result;
-       
     }
 };
 
