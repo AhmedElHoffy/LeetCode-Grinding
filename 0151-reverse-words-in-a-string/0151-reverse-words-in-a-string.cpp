@@ -1,40 +1,37 @@
 class Solution {
 public:
     string reverseWords(string Str) {
-        int Str_Size = Str.size();
-        stack<char>Word_Stk;
-        int j=Str_Size-1;
+        stack<char> Chars_Stk;
+        string Curr_Word="";
         string Result="";
-        bool firstWord = true; // To handle spaces correctly
-        while(j>=0){
-            while(j>=0 && Str[j]==' '){
-                j--;
-            }
-            if (j < 0) break; // If no more words, stop
-            
-            while( j>=0 && Str[j]!=' '){ // Word Detected 
-                Word_Stk.push(Str[j]);
-                cout<<"Letter: "<<Str[j]<<" Detected"<<endl;
-                j--;
-                
-            }
-            cout<<endl;
-            // Out of loop (word Captured)
+        char Curr_Char;
 
-            if (!firstWord ) {
-                Result += " "; // Add space between words
+        for( char Ch : Str){
+            Chars_Stk.push(Ch);
+        }
+
+        while(!Chars_Stk.empty()){
+            Curr_Char = Chars_Stk.top();
+
+            if(Curr_Char!=' '){
+                Curr_Word = Curr_Char + Curr_Word;
+            }else{
+                if(!Curr_Word.empty()){
+                    Result = Result +Curr_Word + " ";
+                    Curr_Word="";
+                }
             }
-            while(!Word_Stk.empty()){
-                Result.push_back(Word_Stk.top());
-                cout<<" Letter: "<<Word_Stk.top()<<" Popped from Word_Stk"<<endl;
-                Word_Stk.pop();
-            }
-            cout<<endl;
-            cout<<"Result String now is = "<<Result<<endl<<endl;
-            firstWord = false;
-            j--;
+            Chars_Stk.pop();
+        }
+        if(!Curr_Word.empty()){
+            Result = Result + Curr_Word;
+        }
+
+        if(!Result.empty() && Result.back()==' '){
+            Result.pop_back();
         }
         return Result;
+
     }
 };
 
