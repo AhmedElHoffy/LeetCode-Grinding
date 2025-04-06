@@ -1,50 +1,46 @@
 class Solution {
-    vector<char>Digits_Interger_to_Char_Convert(int n){
-        vector<char>Digits;
-        while(n>0){
-            Digits.insert( Digits.begin(),(n % 10) + '0');
-            n/=10;
+private: 
+    string Num_2_Str_Convert(int num){
+        string Result="";
+        char Ch;
+        while(num>0){
+            Ch = (num%10) + '0';
+            Result = Ch + Result;
+            num/=10;
         }
-        return Digits;
+        return Result;
     }
+
 public:
-    int compress(vector<char>& chars) {
-        int n = chars.size();
-        int index=0;
-        char Curr_Char=chars[0];
-        int Curr_Char_Count=1;
-        chars[index++]=Curr_Char;
-        vector<char>Digits;
-        for(int i=1; i < n ; i++){
-            if(chars[i]==Curr_Char){
-                Curr_Char_Count++;
+    int compress(vector<char>& Chars) {
+        int n = Chars.size();
+        int Running_Ptr=0, Write_Idx=0;
+        int Count_Chars=0;
+        char Curr_Char;
+        string Repeat_Char_Count_Str;
+        int Compressed_Size;
+        while(Running_Ptr < n){
+            Curr_Char = Chars[Running_Ptr];
+            Count_Chars=0;
+            while(Running_Ptr < n && Chars[Running_Ptr]==Curr_Char){
+                Count_Chars++;
+                Running_Ptr++;
+            }
 
-            }else{
-                // Convert the count to chars and add them to the vector
-                if (Curr_Char_Count > 1) {
-                    Digits = Digits_Interger_to_Char_Convert(Curr_Char_Count);
-                    for (char c : Digits) {
-                        chars[index++] = c;
-                    }
+            Chars[Write_Idx++] = Curr_Char;
+            if(Count_Chars>1){
+                Repeat_Char_Count_Str =  Num_2_Str_Convert(Count_Chars);
+                cout<<"Repeated Chars count: "<<Count_Chars<<endl;
+                cout<<"Repeated Chars Str: "<<Repeat_Char_Count_Str<<endl;
+                for(char Ch : Repeat_Char_Count_Str){
+                     Chars[Write_Idx++] = Ch;
                 }
-                // Reset for the new character
-                Curr_Char = chars[i];
-                Curr_Char_Count = 1;
-                chars[index++] = Curr_Char;
             }
         }
+        Compressed_Size = Write_Idx;
 
-        // **Fix for the Last Character Group**
-        if (Curr_Char_Count > 1) {
-            Digits = Digits_Interger_to_Char_Convert(Curr_Char_Count);
-            for (char c : Digits) {
-                chars[index++] = c;
-            }
-        }
-
-        cout<<endl;
-        return index;
-
+        cout<<Compressed_Size<<endl<<endl;
+        return Compressed_Size;
     }
 };
 
