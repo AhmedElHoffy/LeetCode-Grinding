@@ -1,42 +1,17 @@
 class Solution {
 public:
-    bool isSubsequence(string s, string t) {
-
-        // Faster Approach O(t_size)
-
-        int i=0,j=0;
-        int S_Size = s.size();
-        int t_Size = t.size();
-
-        while( i < S_Size &&  j < t_Size){
-            if(s[i]==t[j]){
-                i++;
+    bool isSubsequence(string Sub_Str_S, string Str_T) {
+        int S_size = Sub_Str_S.length(), T_size = Str_T.length();
+        int Running_Idx=0;
+        for(char Ch : Str_T){
+            if(Sub_Str_S[Running_Idx] == Ch){
+                Running_Idx++;
             }
-            j++;
-        }
-        return i==s.size();
-
-        //Time Compelxity O(t_size * s_size)
-        /*
-        int S_Size = s.size();
-        int t_Size = t.size();
-        int Last_Idx=-1;
-        bool found = false;
-        for(int i=0 ; i < S_Size ; i++ ){
-            found= false;
-            for(int j = 0 ; j < t_Size ; j++){
-                if(s[i]==t[j] && Last_Idx < j){
-                    found = true;
-                    Last_Idx=j;
-                    break;
-                }
-            }
-            if(!found){
-                return false;
+            if(Running_Idx==S_size){
+                break;
             }
         }
-        return true;
-        */
+        return ( (Running_Idx==S_size) ? true:false);
     }
 };
 
@@ -93,3 +68,45 @@ public:
 };
 
 */
+
+
+
+/*
+ bool isSubsequence(string s, string t) {
+
+        // Faster Approach O(t_size)
+
+        int i=0,j=0;
+        int S_Size = s.size();
+        int t_Size = t.size();
+
+        while( i < S_Size &&  j < t_Size){
+            if(s[i]==t[j]){
+                i++;
+            }
+            j++;
+        }
+        return i==s.size();
+*/
+        //Time Compelxity O(t_size * s_size)
+        /*
+        int S_Size = s.size();
+        int t_Size = t.size();
+        int Last_Idx=-1;
+        bool found = false;
+        for(int i=0 ; i < S_Size ; i++ ){
+            found= false;
+            for(int j = 0 ; j < t_Size ; j++){
+                if(s[i]==t[j] && Last_Idx < j){
+                    found = true;
+                    Last_Idx=j;
+                    break;
+                }
+            }
+            if(!found){
+                return false;
+            }
+        }
+        return true;
+        */
+    //}
