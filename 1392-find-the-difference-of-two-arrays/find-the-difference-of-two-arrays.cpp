@@ -1,27 +1,31 @@
 class Solution {
 public:
-    vector<vector<int>> findDifference(vector<int>& nums1, vector<int>& nums2) {
-        
-        // Unique Elements in Vector nums1
-        unordered_set<int>nums1_Set(nums1.begin(),nums1.end()); 
+    vector<vector<int>> findDifference(vector<int>& Nums1, vector<int>& Nums2) {
+        vector<vector<int>>Result(2);
+        unordered_set<int>Set_Nums1;
+        unordered_set<int>Set_Nums2;
+        int n1=Nums1.size(), n2=Nums2.size();
 
-        // Unique Elements in Vector nums2
-        unordered_set<int>nums2_Set(nums2.begin(),nums2.end());
-        
-        vector<vector<int>>Distinct_Arrays(2);
+        for(int i=0; i<n1 ; i++){
+            Set_Nums1.insert(Nums1[i]);
+        }
 
-        for(int num : nums1_Set){
-            if(nums2_Set.find(num)==nums2_Set.end()){
-                Distinct_Arrays[0].push_back(num);
+        for(int j=0; j<n2 ; j++){
+            Set_Nums2.insert(Nums2[j]);
+        }
+
+        for(int Num1: Set_Nums1){
+            if(!Set_Nums2.count(Num1)){
+                Result[0].push_back(Num1);
             }
         }
 
-        for(int num : nums2_Set){
-            if(nums1_Set.find(num)==nums1_Set.end()){
-                Distinct_Arrays[1].push_back(num);
+        for(int Num2: Set_Nums2){
+            if(!Set_Nums1.count(Num2)){
+                Result[1].push_back(Num2);
             }
         }
-        return Distinct_Arrays;
+        return Result;
     }
 };
 
