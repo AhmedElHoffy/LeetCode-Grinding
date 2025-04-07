@@ -1,5 +1,49 @@
 class Solution {
 private:
+    bool Vowel_Detect(char Ch){
+        if( Ch == 'a' || Ch == 'e'|| Ch == 'i' ||
+            Ch == 'o' || Ch == 'u'){
+                return true;
+            }else{
+                return false;
+            }
+    }
+
+public:
+    int maxVowels(string Str, int k) {
+        int n = Str.size(), Vowels_Max=0;
+        int Vowels_Count=0;
+        for(int i=0; i<k ; i++){
+            if(Vowel_Detect(Str[i])){
+                Vowels_Count++;
+            }
+        }
+        Vowels_Max = Vowels_Count;
+
+        for(int j=k ; j<n ; j++){
+            if(Vowel_Detect(Str[j])){
+                Vowels_Count++;
+            }
+            if(Vowel_Detect(Str[j-k])){
+                Vowels_Count--;
+            }
+            if(Vowels_Count > Vowels_Max){
+                Vowels_Max = Vowels_Count;
+            }
+        }
+        return Vowels_Max;
+    }
+
+};
+
+
+
+
+
+
+
+/*
+private:
     bool Vowel_Detect(char c){
         if(c=='a' || c=='e' || c=='i' || c=='o' || c=='u'){
             return true;
@@ -39,14 +83,9 @@ public:
         return Max_Count;
     }
 
-};
 
 
-
-
-
-
-
+*/
 
 
 
