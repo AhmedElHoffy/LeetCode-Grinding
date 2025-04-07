@@ -1,27 +1,18 @@
 class Solution {
-    int Min_Height(int a, int b){
-        if(a <= b){
-            return a;
-        }else{
-            return b;
-        }
-    }
+    
 public:
-    int maxArea(vector<int>& height) {
-        int n = height.size();
-        int Max_Area = INT_MIN;
-
-        int left = 0, right=n-1;
-        int Curr_Area=0;
-        while( left < right){
-            Curr_Area = (right - left) * Min_Height(height[left],height[right]);
-            if(Curr_Area > Max_Area){
-                Max_Area=Curr_Area;
-            }
-            if(height[left] > height[right] ){
-                right--;
-            }else if(height[left] <= height[right]){
-                left++;
+    int maxArea(vector<int>& Heights) {
+        int n = Heights.size();
+        int Max_Area=0;
+        int Left_Ptr=0, Right_Ptr=n-1;
+        int Curr_Area;
+        while(Left_Ptr < Right_Ptr){
+            Curr_Area = (Right_Ptr - Left_Ptr) * (min(Heights[Left_Ptr],Heights[Right_Ptr]));
+            Max_Area = max(Max_Area,Curr_Area);
+            if(Heights[Left_Ptr] <= Heights[Right_Ptr]){
+                Left_Ptr++;
+            }else{
+                Right_Ptr--;
             }
         }
         return Max_Area;
