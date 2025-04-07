@@ -1,4 +1,37 @@
 class Solution {
+
+public:
+    int maxOperations(vector<int>& Nums, int k) {
+        int n = Nums.size();
+        unordered_map<int,int>Freq_Map; //[Num] Set;
+        int Max_pairs_Count=0;
+        int Complement;
+        for(int i=0 ; i<n ; i++){
+            Complement = k-Nums[i];
+            if(Freq_Map[Complement]>0){
+                Max_pairs_Count++;
+                Freq_Map[Complement]--;
+            }else{
+                Freq_Map[Nums[i]]++;
+            }
+            
+        }
+        return Max_pairs_Count;
+    }
+};
+
+
+
+
+
+
+
+
+
+
+/*
+
+
 private:
 
 void Swap_Num(int &a, int &b){
@@ -45,8 +78,10 @@ void Quick_Sort(vector<int>&arr, int l, int r){
     }
 }
 
-public:
-    int maxOperations(vector<int>& nums, int k) {
+*/
+
+//public:
+    //int maxOperations(vector<int>& nums, int k) {
 
         
         // Quic Sort and two Pointer Approach
@@ -74,7 +109,7 @@ public:
         */
 
         // HashMap approach
-
+/*
         int n = nums.size();
         unordered_map<int,int>Freq; //integer adn freq map
 
@@ -93,18 +128,9 @@ public:
         return count;
         
     }
-};
 
 
-
-
-
-
-
-
-
-
-
+*/
 
 
 
