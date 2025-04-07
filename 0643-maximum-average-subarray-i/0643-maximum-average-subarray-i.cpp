@@ -3,7 +3,7 @@ class Solution {
 public:
     double findMaxAverage(vector<int>& Nums, int k) {
       int n = Nums.size();
-      double Max_Avg=INT_MIN;
+      double Max_Avg=-1e9;
       double Curr_Sum=0;
       for(int i=0 ; i<k ; i++){
         Curr_Sum+=Nums[i];
