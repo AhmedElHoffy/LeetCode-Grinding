@@ -1,32 +1,21 @@
 class Solution {
-
-private: 
-    int Max_Num(int a, int b){
-        return (a>=b) ? a:b;
-    }
 public:
-    int longestSubarray(vector<int>& nums) {
-        int n = nums.size();
-        int Start_Seq=0,End_Seq=0,Zeros_Count=0;
-        int Max_Length=0;
-
-        while(End_Seq < n ){
-
-            if(nums[End_Seq]==0){
-                Zeros_Count++;
+    int longestSubarray(vector<int>& Nums) {
+      int n = Nums.size();
+      int Left=0,Right=0,Zeros_Count=0;
+      int Max_Len=0;
+      while(Right<n){
+        if(Nums[Right]==0)Zeros_Count++;
+        while(Zeros_Count>1){
+            if(Nums[Left]==0){
+                Zeros_Count--;
             }
-
-            while(Zeros_Count > 1){
-                if(nums[Start_Seq]==0){
-                    Zeros_Count--;
-                }
-                Start_Seq++;
-            }
-
-             Max_Length = Max_Num(Max_Length, End_Seq - Start_Seq);
-             End_Seq++;
+            Left++;
         }
-        return Max_Length;
+        Max_Len = max(Max_Len, Right  - Left);
+        Right++;
+      }
+      return Max_Len;
     }
 };
 
