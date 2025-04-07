@@ -2,10 +2,9 @@ class Solution {
 public:
     int longestOnes(vector<int>& Nums, int k) {
         int n = Nums.size();
-        int Left_Ptr=0, Max_Len=0;
-
+        int Left_Ptr=0,Max_Ones=0;
         for(int Right_Ptr=0 ; Right_Ptr<n ; Right_Ptr++){
-            
+
             if(Nums[Right_Ptr]==0){
                 k--;
             }
@@ -16,9 +15,10 @@ public:
                 }
                 Left_Ptr++;
             }
-            Max_Len = max(Max_Len, Right_Ptr-Left_Ptr + 1);
+            
+            Max_Ones = max(Max_Ones, Right_Ptr - Left_Ptr + 1);
         }
-        return Max_Len;
+        return Max_Ones;
     }
 };
 
