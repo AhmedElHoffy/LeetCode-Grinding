@@ -2,6 +2,28 @@ class Solution {
 public:
     int pivotIndex(vector<int>& Nums) {
         int n=Nums.size();
+
+        int Prefix_Sum=0, Total_Sum=0;
+
+        for(int Num:Nums){
+            Total_Sum += Num;
+        }
+
+        for(int i=0 ; i<n ; i++){
+            if(Prefix_Sum == Total_Sum - Prefix_Sum -Nums[i]){
+                return i;
+            }
+            Prefix_Sum+=Nums[i];
+        }
+        return -1;
+    }
+};
+
+
+/*
+
+int pivotIndex(vector<int>& Nums) {
+        int n=Nums.size();
         vector<int> Prefix_Vec(n,0);
         vector<int> Postfix_Vec(n,0);
         int Curr_Sum=0;
@@ -22,10 +44,8 @@ public:
         }
         return -1;
     }
-};
 
-
-
+*/
 
 
 
