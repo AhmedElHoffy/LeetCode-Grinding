@@ -1,5 +1,45 @@
 class Solution {
-    int Max_Num(int a, int b){
+public:
+    int longestOnes(vector<int>& Nums, int k) {
+        int n = Nums.size();
+        int Curr_Ones_Count=0, Max_Ones=0;
+        int Prev=0;
+
+        for(int i=0 ; i<n; i++){
+            if(Nums[i]==0){
+                if(k>0){
+                    Curr_Ones_Count++;
+                    k--;
+                }else{
+
+                    while(Nums[Prev]==1){
+                        Prev++;
+                        Curr_Ones_Count--;
+                    }
+                    Prev++;
+                }
+            }else{
+                Curr_Ones_Count++;
+            }
+            Max_Ones = max(Max_Ones,Curr_Ones_Count);
+        }
+        return Max_Ones;
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ int Max_Num(int a, int b){
         return (a>=b) ? a:b;
     }
 public:
@@ -25,7 +65,7 @@ public:
         }       
         return Max_Length;
     }
-};
+*/
 
 
 
