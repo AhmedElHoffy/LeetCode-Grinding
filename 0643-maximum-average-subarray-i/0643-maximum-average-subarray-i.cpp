@@ -1,33 +1,23 @@
 class Solution {
-private: 
-    double Max_Num (int x, int y){
-        if(x>=y){
-            return x;
-        }else{
-            return y;
-        }
-    }
 
 public:
-    double findMaxAverage(vector<int>& nums, int k) {
-        int n = nums.size();
-        double Curr_Sum=0;
-        double Max_Sum;
-        // Get the First Sum
-        for(int i=0 ; i < k ; i++){
-            Curr_Sum+=nums[i];
+    double findMaxAverage(vector<int>& Nums, int k) {
+      int n = Nums.size();
+      double Max_Avg=INT_MIN;
+      double Curr_Sum;
+      for(int i=0 ; i<k ; i++){
+        Curr_Sum+=Nums[i];
+      }
+      Max_Avg = Curr_Sum/k;
+      
+      for(int j=k; j<n ; j++){
+        Curr_Sum+=Nums[j];
+        Curr_Sum-=Nums[j-k];
+        if((Curr_Sum/k) > Max_Avg){
+            Max_Avg= Curr_Sum/k;
         }
-        Max_Sum = Curr_Sum ;
-
-        int End_Ptr= k;
-        int Start_Ptr = 0;
-
-        while(End_Ptr < n){
-            Curr_Sum+=nums[End_Ptr++];
-            Curr_Sum-=nums[Start_Ptr++];
-            Max_Sum = Max_Num(Max_Sum,Curr_Sum);
-        }
-        return Max_Sum/k;
+      }
+      return Max_Avg;
     }
 };
 
