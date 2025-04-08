@@ -1,59 +1,37 @@
 class Solution {
 public:
-    bool closeStrings(string word1, string word2) {
-        int n1 = word1.size();
-        int n2 = word2.size();
-        unordered_set<char>Word1_Set;
-        unordered_set<char>Word2_Set;
-
-        unordered_map<char,int>Word1_MapFreq;
-        unordered_map<char,int>Word2_MapFreq;
-        // string word1 and strign word2 must be same size to be able to 
-        //perofrm operation 2 successfully
+    bool closeStrings(string Word1, string Word2) {
+        int n1 = Word1.size(), n2 = Word2.size();
         if(n1!=n2){
             return false;
         }
 
-        for(char c1 : word1){
-            Word1_Set.insert(c1);
+        unordered_map<char,int>Freq_Map1,Freq_Map2;
+        unordered_set<char>Unique_Set1,Unique_Set2;
+        multiset<char>Freq_Set1,Freq_Set2;
+
+        for(char Ch1 : Word1){
+            Freq_Map1[Ch1]++;
+            Unique_Set1.insert(Ch1);
+        }
+        
+        for(char Ch2 : Word2){
+            Freq_Map2[Ch2]++;
+            Unique_Set2.insert(Ch2);
         }
 
-        for(char c2 : word2){
-            Word2_Set.insert(c2);
+        for(const auto& Pair_It1 : Freq_Map1){
+            Freq_Set1.insert(Pair_It1.second);
         }
 
-        // same letters must be in both strings regardless size
-        for( char c : Word1_Set ){
-            if(!Word2_Set.count(c)){
-                return false;
-            }
+        for(const auto& Pair_It2 : Freq_Map2){
+            Freq_Set2.insert(Pair_It2.second);
         }
 
-
-
-
-        multiset<int>Freq1;
-        multiset<int>Freq2;
-
-        for(char c1 : word1){
-            Word1_MapFreq[c1]++;
-        }
-
-        for(char c2 : word2){
-            Word2_MapFreq[c2]++;
-        }
-
-        for(const auto& pair : Word1_MapFreq){
-            Freq1.insert(pair.second);
-        }
-
-        for(const auto& pair : Word2_MapFreq){
-            Freq2.insert(pair.second);
-        }
-
-        return Freq1==Freq2;
-
-
+        if(Unique_Set1!= Unique_Set2) return false;
+        if(Freq_Set1!= Freq_Set2) return false;
+        
+        return true;
 
     }
 };
