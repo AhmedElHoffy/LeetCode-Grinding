@@ -1,20 +1,28 @@
 class Solution {
 public:
-    string removeStars(string &s) {
-         int index = 0; 
+    string removeStars(string &Str) {
+        string Result="";
 
-         for(char c : s){
-            if(c!='*'){
-                s[index++]=c;
-                
+        for(char Ch : Str){
+            if(Ch=='*'){
+                if(!Result.empty())Result.pop_back();
             }else{
-                index--;
+                Result.push_back(Ch);
             }
-         }
-         s.resize(index);
-         return s;
+        }
+        return Result;
     }
 };
+
+
+
+
+
+
+
+
+
+
 
 
 /*
