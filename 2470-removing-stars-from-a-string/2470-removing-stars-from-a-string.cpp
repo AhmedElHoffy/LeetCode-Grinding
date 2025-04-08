@@ -1,32 +1,14 @@
 class Solution {
 public:
     string removeStars(string &Str) {
-        int n = Str.size();
-        stack<int>Asterick_Stk;
-
-        for(int i=0 ; i<n ; i++){
-            if(Str[i]=='*'){
-                Asterick_Stk.push(i);
-            }
-        }
-        if(Asterick_Stk.empty()){
-            return Str;
-        }
-
-        stack<char>Chars_Stk;
+        string Result="";
 
         for(char Ch : Str){
-            if(Ch!='*'){
-                Chars_Stk.push(Ch);
-            }else if(!Chars_Stk.empty()){
-                Chars_Stk.pop();
+            if(Ch=='*'){
+                if(!Result.empty())Result.pop_back();
+            }else{
+                Result.push_back(Ch);
             }
-        }
-
-        string Result="";
-        while(!Chars_Stk.empty()){
-            Result = Chars_Stk.top() + Result;
-            Chars_Stk.pop();
         }
         return Result;
     }
