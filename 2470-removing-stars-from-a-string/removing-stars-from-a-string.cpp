@@ -1,6 +1,36 @@
 class Solution {
 public:
     string removeStars(string &Str) {
+      int n = Str.size();
+      int Write=0;
+      
+      for(int Read=0 ; Read<n ; Read++){
+        if(Str[Read]=='*'){
+            if(Write>0)Write--;
+        }else{
+            Str[Write++]=Str[Read];
+        }
+      }
+      return Str.substr(0,Write);  
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+// Time: O(n) ; Space: O(n)
+string removeStars(string &Str) {
         string Result="";
 
         for(char Ch : Str){
@@ -12,13 +42,8 @@ public:
         }
         return Result;
     }
-};
 
-
-
-
-
-
+*/
 
 
 
