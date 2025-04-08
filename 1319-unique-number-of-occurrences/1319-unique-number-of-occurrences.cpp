@@ -16,9 +16,29 @@ public:
             Freq_Set.insert(Pair_It->second);
         }
         return true;
-
     }
 };
+
+
+
+/*
+unordered_map<int,int>Freq_Map;
+        int n= Arr.size();
+        for(int i=0 ; i<n ; i++){
+            Freq_Map[Arr[i]]++;
+        }
+        unordered_map<int,int>::iterator Pair_It=Freq_Map.begin();
+
+        unordered_set<int>Freq_Set;
+        for( Pair_It ; Pair_It!=Freq_Map.end() ; Pair_It++){
+            if(Freq_Set.find(Pair_It->second) != Freq_Set.end()){
+                return false;
+            }
+            Freq_Set.insert(Pair_It->second);
+        }
+        return true;
+    }
+*/
 
 
 
