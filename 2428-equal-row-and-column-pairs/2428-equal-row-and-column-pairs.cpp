@@ -1,7 +1,30 @@
 class Solution {
 public:
     int equalPairs(vector<vector<int>>& Grid) {
-        int Rows_Size = Grid.size(), Cols_Size = Grid[0].size();
+        int Rows_Size = Grid.size(), Cols_Size = Rows_Size;
+        int Count=0;
+        multiset<vector<int>>Rows_Multi_Set;
+
+        for(int i=0; i<Rows_Size ; i++){
+            Rows_Multi_Set.insert(Grid[i]);
+        }
+        vector<int>Col_Vec_temp(Rows_Size);
+        for(int j=0 ; j<Cols_Size ; j++){
+
+            for(int k=0 ; k<Rows_Size ; k++){
+                Col_Vec_temp[k]=Grid[k][j];
+            }
+            Count+=Rows_Multi_Set.count(Col_Vec_temp);
+        }
+        return Count;
+    }
+};
+
+
+
+
+/*
+int Rows_Size = Grid.size(), Cols_Size = Grid[0].size();
         int Count=0;
         vector<vector<int>>Rows_Vec;
         vector<vector<int>>Cols_Vec;
@@ -18,8 +41,8 @@ public:
             Cols_Vec.push_back(Col_Vec_temp);
         }
 
-        for(auto Row : Rows_Vec){
-            for(auto Col :Cols_Vec){
+        for(auto &Row : Rows_Vec){
+            for(auto &Col :Cols_Vec){
                 if(Row==Col){
                     Count++;
                 }
@@ -27,13 +50,8 @@ public:
         }
 
         return Count;
-    }
-};
 
-
-
-
-
+*/
 
 
 
