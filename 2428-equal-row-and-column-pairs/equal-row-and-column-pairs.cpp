@@ -1,34 +1,42 @@
 class Solution {
 public:
-    int equalPairs(vector<vector<int>>& grid) {
-        int rows_Size = grid.size();
-        int Cols_Size = grid[0].size();
-        multiset<vector<int>>Rows_Elements_Set;
-        multiset<vector<int>>Columns_Elements_Set;
+    int equalPairs(vector<vector<int>>& Grid) {
+        int Rows_Size = Grid.size(), Cols_Size = Grid[0].size();
+        int Count=0;
+        vector<vector<int>>Rows_Vec;
+        vector<vector<int>>Cols_Vec;
 
-        int count=0;
-        
-        for(int i=0 ; i < rows_Size; i++){
-            Rows_Elements_Set.insert(grid[i]);
+        for(int i=0; i<Rows_Size ; i++){
+            Rows_Vec.push_back(Grid[i]);
         }
 
-
-        vector<int>Curr_Col(Cols_Size,0);
-        for(int j = 0 ;  j < Cols_Size ; j++){
-             vector<int>Curr_Col(Cols_Size);
-            for(int i=0 ; i < rows_Size ; i++){
-                Curr_Col[i]=grid[i][j];
+        vector<int>Col_Vec_temp(Rows_Size);
+        for(int j=0 ; j<Cols_Size ; j++){
+            for(int k=0 ; k<Rows_Size ; k++){
+                Col_Vec_temp[k]=Grid[k][j];
             }
-            Columns_Elements_Set.insert(Curr_Col);
+            Cols_Vec.push_back(Col_Vec_temp);
         }
 
-        for(auto vec : Rows_Elements_Set ){
-                count+=Columns_Elements_Set.count(vec);
+        for(auto Row : Rows_Vec){
+            for(auto Col :Cols_Vec){
+                if(Row==Col){
+                    Count++;
+                }
+            }
         }
-        return count;
 
+        return Count;
     }
 };
+
+
+
+
+
+
+
+
 
 
 
