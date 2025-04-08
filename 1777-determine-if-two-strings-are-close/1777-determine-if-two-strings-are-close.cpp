@@ -2,37 +2,27 @@ class Solution {
 public:
     bool closeStrings(string Word1, string Word2) {
         int n1 = Word1.size(), n2 = Word2.size();
-        if(n1!=n2){
-            return false;
-        }
-
+        if(n1!=n2)return false;
         unordered_map<char,int>Freq_Map1,Freq_Map2;
         unordered_set<char>Unique_Set1,Unique_Set2;
         multiset<char>Freq_Set1,Freq_Set2;
-
         for(char Ch1 : Word1){
             Freq_Map1[Ch1]++;
             Unique_Set1.insert(Ch1);
         }
-        
         for(char Ch2 : Word2){
             Freq_Map2[Ch2]++;
             Unique_Set2.insert(Ch2);
         }
-
         for(const auto& Pair_It1 : Freq_Map1){
             Freq_Set1.insert(Pair_It1.second);
         }
-
         for(const auto& Pair_It2 : Freq_Map2){
             Freq_Set2.insert(Pair_It2.second);
         }
-
         if(Unique_Set1!= Unique_Set2) return false;
         if(Freq_Set1!= Freq_Set2) return false;
-        
         return true;
-
     }
 };
 
