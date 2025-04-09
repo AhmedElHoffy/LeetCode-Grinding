@@ -10,31 +10,34 @@ private:
     }
 
 public:
-    string decodeString(string s) {
-        stack<int> numStk;
-        stack<string> strStk;
-        string curr = "";
-        int num = 0;
+    string decodeString(string Str) {
+        stack<int>Nums_Stk;
+        stack<string>Str_Stk;
+        string Curr="";
+        int Num=0;
+        string temp;
+        int Repeat;
 
-        for (char ch : s) {
-            if (isdigit(ch)) {
-                num = num * 10 + (ch - '0');  // handle multi-digit numbers
-            } else if (ch == '[') {
-                strStk.push(curr);
-                numStk.push(num);
-                curr = "";
-                num = 0;
-            } else if (ch == ']') {
-                string temp = curr;
-                curr = strStk.top(); strStk.pop();
-                int repeat = numStk.top(); numStk.pop();
-                while (repeat--) curr += temp;
-            } else {
-                curr += ch;
+        for(char Ch : Str){
+            if(Ch>='0' && Ch<='9'){
+                Num = Num*10 + (Ch-'0');
+            }else if( Ch == '['){
+                Str_Stk.push(Curr);
+                Curr="";
+                Nums_Stk.push(Num);
+                Num=0;
+            }else if(Ch == ']'){
+                temp = Curr;
+                Curr= Str_Stk.top();
+                Str_Stk.pop();
+                Repeat = Nums_Stk.top();
+                Nums_Stk.pop();
+                while(Repeat--) Curr+=temp;
+            }else{
+                Curr+=Ch;
             }
         }
-
-        return curr;
+        return Curr;
     }
 };
 
