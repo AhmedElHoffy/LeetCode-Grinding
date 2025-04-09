@@ -1,68 +1,40 @@
 class Solution {
-private:
-    bool Is_Digit(char c) {
-        return (c >= '0' && c <= '9');
-    }
+private: 
+    int Convert_Str_2_Num(string S){
+        int Result=0;
 
-    int StrDigit_2_IntDigit(string Num_Str) {
-        int Num = 0;
-        for (char c : Num_Str) {
-            Num = Num * 10 + (c - '0'); // ✅ Corrected digit conversion
+        for(char Ch : S){
+            Result = Result*10 + (Ch-'0');
         }
-        return Num;
+        return Result;
     }
 
 public:
-    string decodeString(string Str) {
-        stack<char> Stk;
-        string Decoded_Str = "";
-        string Num_RepeatK_Str = "";
-        string Repeated_SubStr = "";
-        int Num_RepeatK = 0;
+    string decodeString(string s) {
+        stack<int> numStk;
+        stack<string> strStk;
+        string curr = "";
+        int num = 0;
 
-        for (char c : Str) {
-            if (c != ']') {
-                Stk.push(c);
+        for (char ch : s) {
+            if (isdigit(ch)) {
+                num = num * 10 + (ch - '0');  // handle multi-digit numbers
+            } else if (ch == '[') {
+                strStk.push(curr);
+                numStk.push(num);
+                curr = "";
+                num = 0;
+            } else if (ch == ']') {
+                string temp = curr;
+                curr = strStk.top(); strStk.pop();
+                int repeat = numStk.top(); numStk.pop();
+                while (repeat--) curr += temp;
             } else {
-                // Step 1: Extract the Encoded Substring inside the brackets
-                Decoded_Str = "";
-                while (!Stk.empty() && Stk.top() != '[') {
-                    Decoded_Str = Stk.top() + Decoded_Str;
-                    Stk.pop();
-                }
-
-                Stk.pop(); // Remove "["
-
-                // Step 2: Extract the Repeat Count (k)
-                Num_RepeatK_Str = "";
-                while (!Stk.empty() && Is_Digit(Stk.top())) { // ✅ Corrected loop condition
-                    Num_RepeatK_Str = Stk.top() + Num_RepeatK_Str;
-                    Stk.pop();
-                }
-
-                Num_RepeatK = StrDigit_2_IntDigit(Num_RepeatK_Str);
-                Repeated_SubStr = "";
-
-                // Step 3: Repeat the extracted substring `Num_RepeatK` times
-                for (int i = 0; i < Num_RepeatK; i++) {
-                    Repeated_SubStr += Decoded_Str;
-                }
-
-                // Step 4: Push the repeated substring back into stack
-                for (char ch : Repeated_SubStr) {
-                    Stk.push(ch);
-                }
+                curr += ch;
             }
         }
 
-        // Step 5: Construct the final decoded string from stack
-        string Result = "";
-        while (!Stk.empty()) {
-            Result.push_back(Stk.top()); // ✅ Efficient method
-            Stk.pop();
-        }
-        reverse(Result.begin(), Result.end()); // ✅ Reverse to get correct order
-        return Result;
+        return curr;
     }
 };
 
