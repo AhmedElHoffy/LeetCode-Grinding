@@ -9,31 +9,32 @@ class Solution {
         //      c. Curr <  abs(New) Destroy Curr and Add New
 public:
     vector<int> asteroidCollision(vector<int>& asteroids) {
-         int write = 0;  // Acts as the top of the in-place "stack"
-    
-    for (int ast : asteroids) {
-        bool destroyed = false;
-        
-        while (write > 0 && ast < 0 && asteroids[write - 1] > 0) {
-            if (asteroids[write - 1] < -ast) {
-                write--;  // top asteroid explodes
-            } else if (asteroids[write - 1] == -ast) {
-                write--;  // both explode
-                destroyed = true;
-                break;
-            } else {
-                destroyed = true;  // incoming asteroid explodes
-                break;
+        int Write=0;
+        bool Destroyed_New = false;
+
+        for(int Ast : asteroids){
+            Destroyed_New = false;
+
+            while(Write>0 && asteroids[Write-1]>0 && Ast<0){
+                if(asteroids[Write-1] < -Ast){
+                    Write--;
+                }else if(asteroids[Write-1] == -Ast){
+                    Write--;
+                    Destroyed_New = true;
+                    break;
+                }else{
+                    Destroyed_New = true;
+                    break;
+                }
+            }
+
+            if(!Destroyed_New){
+                asteroids[Write++] = Ast;
             }
         }
-        
-        if (!destroyed) {
-            asteroids[write++] = ast;  // write asteroid in-place
-        }
-    }
-    
-    // Return only the surviving portion
-    return vector<int>(asteroids.begin(), asteroids.begin() + write);
+        asteroids.resize(Write);
+        return asteroids;
+
     }
 };
 
