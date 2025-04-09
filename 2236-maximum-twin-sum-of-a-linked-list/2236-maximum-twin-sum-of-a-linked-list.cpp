@@ -11,31 +11,31 @@
 class Solution {
 public:
     int pairSum(ListNode* head) {
-        ListNode* Fast=head,*Slow = head,*Prev=nullptr,*temp;
-        while(Fast!=nullptr  && Fast->next!=nullptr){
+        int Max_twin_Sum=0;
+        ListNode* Fast=head, *Slow=head;
+        ListNode* Prev=nullptr, *temp;
+
+        while(Fast!=nullptr && Fast->next!=nullptr){
             Fast=Fast->next->next;
-            
-            temp = Slow->next;
-            Slow->next= Prev;
-            Prev = Slow;
-            Slow = temp;
-
-        }
-        int Max_Twin_Sum=INT_MIN;
-        int Curr_Sum;
-        while(Prev!=nullptr && Slow!=nullptr){
-            Curr_Sum = Prev->val + Slow->val;
-            if( Curr_Sum > Max_Twin_Sum){
-                Max_Twin_Sum = Curr_Sum;
-            }
-            Prev = Prev->next;
+            temp = Slow;
             Slow = Slow->next;
-
+            temp->next = Prev;
+            Prev = temp; 
         }
-        return Max_Twin_Sum;
 
+        while(Slow && Prev){
+            if( (Slow->val + Prev->val) > Max_twin_Sum){
+                Max_twin_Sum = Slow->val + Prev->val;
+            }
+            Slow = Slow->next;
+            Prev = Prev->next;
+        }
+        return  Max_twin_Sum;
     }
 };
+
+
+
 
 
 
