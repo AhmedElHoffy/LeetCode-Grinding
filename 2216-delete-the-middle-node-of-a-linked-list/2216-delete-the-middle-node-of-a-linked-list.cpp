@@ -14,15 +14,18 @@ public:
         if(head==nullptr || head->next==nullptr){
             return nullptr;
         }
-        ListNode* Fast_Ptr=head, *Slow_Ptr=head,*Prev_Ptr =nullptr;
+        ListNode* Slow_Ptr=head, *Fast_Ptr=head,*Prev=nullptr;
+
         while(Fast_Ptr!=nullptr && Fast_Ptr->next!=nullptr){
-            Prev_Ptr=Slow_Ptr;
+            Prev=Slow_Ptr;
             Slow_Ptr = Slow_Ptr->next;
-            Fast_Ptr=Fast_Ptr->next->next;
+            Fast_Ptr = Fast_Ptr->next->next;
         }
-        Prev_Ptr->next=Slow_Ptr->next;
+        Prev->next = Slow_Ptr->next;
+
+        Slow_Ptr->next = nullptr;
+        delete Slow_Ptr;
         return head;
-        
 
     }
 };
