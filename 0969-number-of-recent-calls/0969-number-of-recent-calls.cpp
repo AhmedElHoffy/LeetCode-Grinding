@@ -1,20 +1,23 @@
 class RecentCounter {
 public:
- queue<int> Q_Calls;        
+    queue<int>Q_Calls;
     RecentCounter() {
-        // Constructor initializes the queue (no additional logic needed)
+        
     }
     
     int ping(int t) {
-
         Q_Calls.push(t);
-
-        while( t - Q_Calls.front() > 3000){
-            Q_Calls.pop();
-        }
+            while(Q_Calls.front() < t-3000){
+                Q_Calls.pop();
+            }
         return Q_Calls.size();
     }
 };
+
+
+
+
+
 
 /**
  * Your RecentCounter object will be instantiated and called as such:
@@ -48,4 +51,4 @@ public:
  * int param_1 = obj->ping(t);
  */
 
- 
+
