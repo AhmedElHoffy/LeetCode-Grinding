@@ -13,8 +13,22 @@ class Solution {
 public:
     
     int maxDepth(TreeNode* root) {
-        if (!root) return 0;
-        return 1+ max(maxDepth(root->left),maxDepth(root->right));
-        
+        stack<pair<TreeNode*,int>>Stk;
+        int Height=1;
+        if(!root) return 0;
+
+        Stk.push({root,Height});
+        int Max_Depth=0;
+        while(!Stk.empty()){
+            auto [Curr_Node,Curr_Depth] = Stk.top();
+            Stk.pop();
+
+            if(Curr_Node){
+                Max_Depth = max(Max_Depth,Curr_Depth);
+                Stk.push({Curr_Node->left,Curr_Depth+1});
+                Stk.push({Curr_Node->right,Curr_Depth+1});
+            }
+        }
+        return Max_Depth;
     }
 };
