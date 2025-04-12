@@ -1,5 +1,6 @@
 class Solution {
-private: 
+private:
+    // DFS Recursive Approach  
     void DFS_Helper (vector<vector<int>>& isConnected,vector<bool>&Visited_Cities, int Curr_City, int Size){
         Visited_Cities[Curr_City] = true;
         for(int j=0 ; j<Size ; j++){
