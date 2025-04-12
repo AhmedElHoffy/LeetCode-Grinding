@@ -1,0 +1,57 @@
+class Solution {
+public:
+    vector<double> calcEquation(vector<vector<string>>& equations, vector<double>& values, vector<vector<string>>& queries) {
+        int n = equations.size();
+        unordered_map<string,vector<pair<string,double>>>Graph;
+        string Numerator,Denomerator;
+        double Val;
+        
+        //Building the Graph
+        for(int i=0 ; i<n ; i++){
+            Numerator = equations[i][0], Denomerator = equations[i][1];
+            Val = values[i];
+            Graph[Numerator].push_back({Denomerator,Val});
+            Graph[Denomerator].push_back({Numerator,1.0/Val});
+        }
+
+       string Start_Node, Last_Node;
+       vector<double>Result;
+       for(auto& q : queries){
+        string Start_Node=q[0],Last_Node=q[1];
+        if(Graph.find(Start_Node)==Graph.end() || Graph.find(Last_Node)==Graph.end()){
+            Result.push_back(-1.0);
+            continue; // to neglect result of lines and go to the next query
+        }
+        unordered_set<string>Visited_Nodes;
+        stack<pair<string,double>>Stk;
+        Stk.push({Start_Node,1.0});
+        bool Reached_Last_Node=false;
+        
+        while(!Stk.empty()){
+            auto [Curr_Node , Curr_Cost] = Stk.top();
+            Stk.pop();
+            
+
+            //Reached Last Node Check
+            if(Curr_Node == Last_Node){
+                Result.push_back(Curr_Cost);
+                Reached_Last_Node = true;
+                break; // Exit from While Loop
+            }
+
+            Visited_Nodes.insert(Curr_Node);
+            for(auto& [Nei,Wei] : Graph[Curr_Node]){
+                if(!Visited_Nodes.count(Nei)){
+                    Stk.push({Nei,Curr_Cost * Wei});
+                }
+            }
+        } // While Loop Closing Clause
+
+        if(!Reached_Last_Node){
+            Result.push_back(-1.0);
+        }
+
+       } // For Loop Closing Clause
+       return Result;
+    }
+};
