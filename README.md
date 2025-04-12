@@ -39,6 +39,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0345-reverse-vowels-of-a-string](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0345-reverse-vowels-of-a-string) |
 | [0392-is-subsequence](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0392-is-subsequence) |
 | [0394-decode-string](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0394-decode-string) |
+| [0399-evaluate-division](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0399-evaluate-division) |
 | [0408-valid-word-abbreviation](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0408-valid-word-abbreviation) |
 | [0443-string-compression](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0443-string-compression) |
 | [0649-dota2-senate](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0649-dota2-senate) |
@@ -81,6 +82,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0334-increasing-triplet-subsequence](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0334-increasing-triplet-subsequence) |
 | [0346-moving-average-from-data-stream](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0346-moving-average-from-data-stream) |
 | [0347-top-k-frequent-elements](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0347-top-k-frequent-elements) |
+| [0399-evaluate-division](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0399-evaluate-division) |
 | [0435-non-overlapping-intervals](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0435-non-overlapping-intervals) |
 | [0523-continuous-subarray-sum](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0523-continuous-subarray-sum) |
 | [0560-subarray-sum-equals-k](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0560-subarray-sum-equals-k) |
@@ -305,6 +307,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0314-binary-tree-vertical-order-traversal](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0339-nested-list-weight-sum](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0339-nested-list-weight-sum) |
 | [0364-nested-list-weight-sum-ii](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0364-nested-list-weight-sum-ii) |
+| [0399-evaluate-division](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0399-evaluate-division) |
 | [0547-number-of-provinces](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0547-number-of-provinces) |
 | [0721-accounts-merge](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0721-accounts-merge) |
 | [0871-keys-and-rooms](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0871-keys-and-rooms) |
@@ -343,6 +346,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0314-binary-tree-vertical-order-traversal](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0339-nested-list-weight-sum](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0339-nested-list-weight-sum) |
 | [0364-nested-list-weight-sum-ii](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0364-nested-list-weight-sum-ii) |
+| [0399-evaluate-division](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0399-evaluate-division) |
 | [0543-diameter-of-binary-tree](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0543-diameter-of-binary-tree) |
 | [0547-number-of-provinces](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0547-number-of-provinces) |
 | [0721-accounts-merge](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0721-accounts-merge) |
@@ -377,6 +381,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Union Find
 |  |
 | ------- |
+| [0399-evaluate-division](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0399-evaluate-division) |
 | [0547-number-of-provinces](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0547-number-of-provinces) |
 | [0721-accounts-merge](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0721-accounts-merge) |
 ## Bucket Sort
@@ -387,6 +392,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0133-clone-graph](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0133-clone-graph) |
+| [0399-evaluate-division](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0399-evaluate-division) |
 | [0547-number-of-provinces](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0547-number-of-provinces) |
 | [0871-keys-and-rooms](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0871-keys-and-rooms) |
 | [1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
@@ -416,4 +422,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0374-guess-number-higher-or-lower](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0374-guess-number-higher-or-lower) |
+## Shortest Path
+|  |
+| ------- |
+| [0399-evaluate-division](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0399-evaluate-division) |
 <!---LeetCode Topics End-->
