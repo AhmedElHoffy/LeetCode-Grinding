@@ -1,6 +1,57 @@
 class Solution {
 public:
+
+    double DFS_Helper(string Curr_Node, string Target_Node, unordered_map<string,vector<pair<string,double>>>Graph,
+                    unordered_set<string>&Visited_Nodes){
+                        if(Curr_Node == Target_Node){
+                            return 1.0;
+                        }
+                        Visited_Nodes.insert(Curr_Node);
+
+                        for(auto& [Nei , Wei] : Graph[Curr_Node]){
+                            if(!Visited_Nodes.count(Nei)){
+                                double Curr_Prod = DFS_Helper(Nei,Target_Node,Graph,Visited_Nodes);
+                                if(Curr_Prod!=-1.0) {
+                                    return Curr_Prod * Wei;
+                                }
+                            }
+                        }
+                        return -1.0;
+                    }
     vector<double> calcEquation(vector<vector<string>>& equations, vector<double>& values, vector<vector<string>>& queries) {
+        int n = equations.size();
+        unordered_map<string,vector<pair<string,double>>>Graph;
+        string Numerator,Denomerator;
+        double Val;
+        
+        //Building the Graph
+        for(int i=0 ; i<n ; i++){
+            Numerator = equations[i][0], Denomerator = equations[i][1];
+            Val = values[i];
+            Graph[Numerator].push_back({Denomerator,Val});
+            Graph[Denomerator].push_back({Numerator,1.0/Val});
+        }
+        vector<double>Result;
+        string Start_Node, Last_Node;
+        for(auto& q : queries){
+            Start_Node=q[0] , Last_Node=q[1];
+            if(Graph.find(Start_Node)==Graph.end() || Graph.find(Start_Node)==Graph.end()){
+                Result.push_back(-1.0);
+                continue;
+            }
+            unordered_set<string>Visited_Nodes;
+            Result.push_back(DFS_Helper(Start_Node,Last_Node,Graph,Visited_Nodes));
+        }
+        return Result;
+    }
+};
+
+
+/*
+
+// Iterative DFS Approach:  Time Complexity: O(N(Edges  in equation) + Q(Queries) * V(Nodes in Graph)) ;  
+//                          Space Complexity: O(N + V)
+vector<double> calcEquation(vector<vector<string>>& equations, vector<double>& values, vector<vector<string>>& queries) {
         int n = equations.size();
         unordered_map<string,vector<pair<string,double>>>Graph;
         string Numerator,Denomerator;
@@ -54,4 +105,4 @@ public:
        } // For Loop Closing Clause
        return Result;
     }
-};
+*/
