@@ -3,9 +3,6 @@ public:
     int nearestExit(vector<vector<char>>& maze, vector<int>& entrance) {
         int Row_Size = maze.size(), Col_Size = maze[0].size();
         vector<vector<int>>Directions={{-1,0},{1,0},{0,-1},{0,1}}; //Up,Down,Left,Right
-        int Min_Num_Steps = 0;
-        bool Exit_Found=false;
-
 
         queue<tuple<int,int,int>>BFS_Q;
         BFS_Q.push({entrance[0],entrance[1],0});
