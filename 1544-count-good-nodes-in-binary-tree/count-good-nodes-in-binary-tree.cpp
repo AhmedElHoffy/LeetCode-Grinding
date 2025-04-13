@@ -11,7 +11,24 @@
  */
 class Solution {
 public:
+    int DFS_Helper (TreeNode* Curr_Node, int Max_SoFar){
+        if(!Curr_Node) return 0;
+        int Count = (Curr_Node->val >= Max_SoFar) ? 1:0;
+        Max_SoFar = max(Max_SoFar,Curr_Node->val);
+        return Count + DFS_Helper(Curr_Node->left,Max_SoFar) + DFS_Helper(Curr_Node->right,Max_SoFar);
+    }
     int goodNodes(TreeNode* root) {
+        int Count=0;
+        return DFS_Helper(root,root->val);
+    }
+};
+
+
+
+
+// Iterative DFS ;  Time: O(N) and Space:O(H)
+/*
+int goodNodes(TreeNode* root) {
         int Count=0;
         if(!root) return Count;
 
@@ -32,4 +49,4 @@ public:
         }
         return Count;
     }
-};
+*/
