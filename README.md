@@ -108,6 +108,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1798-max-number-of-k-sum-pairs](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1798-max-number-of-k-sum-pairs) |
 | [1833-find-the-highest-altitude](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1833-find-the-highest-altitude) |
 | [1909-buildings-with-an-ocean-view](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1909-buildings-with-an-ocean-view) |
+| [2038-nearest-exit-from-entrance-in-maze](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/2038-nearest-exit-from-entrance-in-maze) |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/2392-successful-pairs-of-spells-and-potions) |
 | [2428-equal-row-and-column-pairs](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/2428-equal-row-and-column-pairs) |
 | [2553-total-cost-to-hire-k-workers](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/2553-total-cost-to-hire-k-workers) |
@@ -214,6 +215,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Matrix
 |  |
 | ------- |
+| [2038-nearest-exit-from-entrance-in-maze](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/2038-nearest-exit-from-entrance-in-maze) |
 | [2428-equal-row-and-column-pairs](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/2428-equal-row-and-column-pairs) |
 ## Simulation
 |  |
@@ -314,6 +316,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
+| [2038-nearest-exit-from-entrance-in-maze](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/2038-nearest-exit-from-entrance-in-maze) |
 ## Randomized
 |  |
 | ------- |
