@@ -98,6 +98,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0932-monotonic-array](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0932-monotonic-array) |
 | [1014-k-closest-points-to-origin](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1014-k-closest-points-to-origin) |
 | [1028-interval-list-intersections](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1028-interval-list-intersections) |
+| [1036-rotting-oranges](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1036-rotting-oranges) |
 | [1046-max-consecutive-ones-iii](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1046-max-consecutive-ones-iii) |
 | [1319-unique-number-of-occurrences](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1319-unique-number-of-occurrences) |
 | [1392-find-the-difference-of-two-arrays](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1392-find-the-difference-of-two-arrays) |
@@ -215,6 +216,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Matrix
 |  |
 | ------- |
+| [1036-rotting-oranges](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1036-rotting-oranges) |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/2038-nearest-exit-from-entrance-in-maze) |
 | [2428-equal-row-and-column-pairs](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/2428-equal-row-and-column-pairs) |
 ## Simulation
@@ -315,6 +317,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0871-keys-and-rooms](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0871-keys-and-rooms) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
+| [1036-rotting-oranges](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1036-rotting-oranges) |
 | [1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/2038-nearest-exit-from-entrance-in-maze) |
 ## Randomized
