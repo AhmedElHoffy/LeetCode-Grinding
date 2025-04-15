@@ -1,35 +1,32 @@
 class Solution {
 public:
     string minRemoveToMakeValid(string Str) {
-        int n = Str.length();
-        stack<pair<char,int>>Parentheses_Stk;
-        unordered_set<int>InValid_Parentheses_Set;
-        for(int i = 0 ; i < n ; i++){
-            if(Str[i]=='('){
-                Parentheses_Stk.push({Str[i],i});
-            }else if(Str[i]==')'){
-                if(Parentheses_Stk.empty()){
-                    Parentheses_Stk.push({Str[i],i});
-                }else{
-                    if(Parentheses_Stk.top().first=='('){
-                        Parentheses_Stk.pop();
-                    }else{
-                        Parentheses_Stk.push({Str[i],i});
-                    }
-                }
+        int n = Str.size();
+        stack<pair<char,int>>Stk_Paren;
+
+        for (int i = 0; i < n; i++) {
+        if (Str[i] == '(') {
+            Stk_Paren.push({'(', i});
+        } else if (Str[i] == ')') {
+            if (!Stk_Paren.empty() && Stk_Paren.top().first == '(') {
+                Stk_Paren.pop();
+            } else {
+                Stk_Paren.push({')', i});
             }
-            
         }
-        while(!Parentheses_Stk.empty()){
-                auto[ch, Index] = Parentheses_Stk.top();
-                Parentheses_Stk.pop();
-                InValid_Parentheses_Set.insert(Index);
+        // Skip all other characters
+    }
+
+        unordered_set<int>Un_Valid_Idx;
+        while(!Stk_Paren.empty()){
+            Un_Valid_Idx.insert(Stk_Paren.top().second);
+            Stk_Paren.pop();
         }
-        string Result;
-        
-        for(int i=0; i < n ; i++){
-            if(InValid_Parentheses_Set.find(i)==InValid_Parentheses_Set.end()){
-                    Result+=Str[i];
+        string Result="";
+
+        for(int j=0 ; j<n ; j++){
+            if(!Un_Valid_Idx.count(j)){
+                Result+=Str[j];
             }
         }
         return Result;
