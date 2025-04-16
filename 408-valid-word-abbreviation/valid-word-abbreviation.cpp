@@ -1,57 +1,64 @@
 class Solution {
 private:
-    
-    bool Char_Check( char a){
-        return (a>='a' && a<='z');
-    }
-    
-    int Convert_StrDigit2Num(string Digits){
-        int Num=0;
-        for(char Digit : Digits){
-            Num = Num*10 + (Digit -'0');
+    int Str2Num(string Num){
+        int Res=0;
+        for(char Ch : Num){
+            Res = (Res*10) + (Ch -'0');
         }
-        return Num;
+        return Res;
     }
-    
-    bool Is_Digit(char ch){
+
+    bool is_Digit(char ch){
         return (ch>='0' && ch<='9');
     }
 
 public:
     bool validWordAbbreviation(string word, string abbr) {
-        int n = word.length(), m = abbr.length();        
-        int Ptr_w=0, Ptr_abbr=0;
-        string Digits="";
-        int Abbr_Num=0;
-        while(Ptr_abbr < m && Ptr_w < n){
-            if(Is_Digit(abbr[Ptr_abbr])){
-                
-                //Check Leading Zeros
-                if(abbr[Ptr_abbr]=='0') return false;
+        int n1 = word.size(), n2 = abbr.size();
 
-                // Extract the full numebr form str 'abbr'
-                while(Ptr_abbr < m && Is_Digit(abbr[Ptr_abbr]) ){
-                    Digits+= abbr[Ptr_abbr++];
-                }
-                
-            Abbr_Num = Convert_StrDigit2Num(Digits);
-            Digits=""; // Reset Digits
-
-            Ptr_w+=Abbr_Num;  //Move Ptr_W forward by Abbr_Num
+        int Ptr_W = 0 , Ptr_abbr = 0;
+        int Curr_Dup=0;
+        string Num_Str="";
+        while(Ptr_W<n1  &&  Ptr_abbr<n2){
+           
             
-            if ( Ptr_w > n)return false;
 
-            }else{ // If Abbr character is not digit
-                if(Ptr_w>= n || word[Ptr_w]!= abbr[Ptr_abbr]) return false;
-                Ptr_w++;
+            // Check Leading Zero
+            if(is_Digit(abbr[Ptr_abbr])){
+                if(abbr[Ptr_abbr]=='0') return false;
+                 Num_Str="";
+                Curr_Dup=0;
+        
+            while(Ptr_abbr<n2 && is_Digit(abbr[Ptr_abbr])){
+                Num_Str+=abbr[Ptr_abbr];
+                Ptr_abbr++;
+            }
+            Curr_Dup=Str2Num(Num_Str);
+            Ptr_W+=Curr_Dup;
+            }else {
+                if(word[Ptr_W] != abbr[Ptr_abbr]) return false;
+                Ptr_W++;
                 Ptr_abbr++;
             }
         }
-
-        return Ptr_w == n && Ptr_abbr == m;
-
+        return ( ( (Ptr_W==n1) && (Ptr_abbr==n2) ) ? true:false );
     }
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
