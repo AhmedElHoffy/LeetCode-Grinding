@@ -1,4 +1,49 @@
 class Solution {
+public:
+
+    bool Is_Valid_Palindrome_Helper(string SubStr, int Left, int Right){
+        int L = Left, R = Right;
+        while(L<R){
+            if(SubStr[L]!=SubStr[R]){
+                return false;
+            }
+            L++;
+            R--;
+        }
+        return true;
+    }
+    bool validPalindrome(string Str) {
+        int n = Str.length();
+        int LeftIdx = 0 , RightIdx = n-1;
+        while(LeftIdx < RightIdx){
+            if(Str[LeftIdx]!=Str[RightIdx]){
+                return (Is_Valid_Palindrome_Helper(Str,LeftIdx+1,RightIdx) || 
+                        Is_Valid_Palindrome_Helper(Str,LeftIdx,RightIdx-1));
+            }
+            LeftIdx++;
+            RightIdx--;
+        }
+        return true;
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 private:
     bool Is_Palindrome(string &SubStr, int LefIdx, int RightIdx){
         int n_Sub = SubStr.length();
@@ -27,14 +72,7 @@ public:
         } 
         return true;
     }
-};
-
-
-
-
-
-
-
+*/
 
 
 
