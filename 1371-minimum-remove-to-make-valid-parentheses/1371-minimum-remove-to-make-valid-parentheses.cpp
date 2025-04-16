@@ -2,6 +2,67 @@ class Solution {
 public:
     string minRemoveToMakeValid(string Str) {
         int n = Str.size();
+        int balance=0;
+
+        // Mark Invalid ')'
+        for(int i=0 ; i<n ; i++){
+            if(Str[i]=='('){
+                balance++;
+            }else if(Str[i]==')'){
+                if(balance>0){
+                    balance--;
+                }else{
+                    Str[i]='*';
+                }
+            }
+        }
+
+        balance=0;
+        // Mark Invalid '('
+        for(int j=n-1 ; j>=0 ; j--){
+            if(Str[j]==')'){
+                balance++;
+            }else if(Str[j]=='('){
+                if(balance>0){
+                    balance--;
+                }else{
+                    Str[j]='*';
+                }
+            }
+        }
+
+        int WriteIdx=0;
+        // Build In-Place
+        for(int k=0 ; k<n ; k++){
+            if(Str[k]!='*'){
+                Str[WriteIdx++]=Str[k];
+            }
+        }
+        Str.resize(WriteIdx);
+        return Str;
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Stack of pairs approach -> Time : O(N) and Space : O(N)
+
+/*
+ int n = Str.size();
         stack<pair<char,int>>Stk;
         for(int i=0; i<n ; i++){
             if(Str[i]==')'){
@@ -32,19 +93,7 @@ public:
         }
         return Result;
        
-    }
-};
-
-
-
-
-
-
-
-
-
-
-
+*/
 
 
 
