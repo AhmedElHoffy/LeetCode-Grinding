@@ -10,7 +10,47 @@
  * };
  */
 class Solution {
-    void BFS_Traverse(TreeNode* root, vector<vector<int>>&TreeLevelTraverse){
+public:
+    void BFS_Traverse(TreeNode* root, vector<int>& RightSide_Nodes){
+        if(!root) return;
+        queue<tuple<TreeNode*,int,int>>BFS_Q;
+        BFS_Q.push({root,0,0});
+        int Max_Depth=-1;
+
+        while(!BFS_Q.empty()){
+            auto [Curr_Node , X_Idx ,  Y_Idx] = BFS_Q.front();
+            BFS_Q.pop();
+
+            if (Y_Idx > Max_Depth){
+                RightSide_Nodes.push_back(Curr_Node->val);
+                Max_Depth=Y_Idx;
+            }
+            // Push the rigth Child First to ensure having th roghtmsot child at the beginnign of
+            // each new level
+            if(Curr_Node->right) BFS_Q.push({Curr_Node->right,X_Idx-1,Y_Idx+1});
+            if(Curr_Node->left) BFS_Q.push({Curr_Node->left,X_Idx+1,Y_Idx+1});
+        }
+    }
+    vector<int> rightSideView(TreeNode* root) {
+        vector<int>RightSide_Nodes;
+        BFS_Traverse(root,RightSide_Nodes);
+        return RightSide_Nodes;
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+void BFS_Traverse(TreeNode* root, vector<vector<int>>&TreeLevelTraverse){
         if(!root) return;
         queue<pair<int,TreeNode*>>BFS_Q;
         BFS_Q.push({0,root});
@@ -39,4 +79,5 @@ public:
         }
         return Result;
     }
-};
+
+*/
