@@ -2,34 +2,36 @@ class Solution {
 public:
     string minRemoveToMakeValid(string Str) {
         int n = Str.size();
-        stack<pair<char,int>>Stk_Paren;
-
-        for (int i = 0; i < n; i++) {
-        if (Str[i] == '(') {
-            Stk_Paren.push({'(', i});
-        } else if (Str[i] == ')') {
-            if (!Stk_Paren.empty() && Stk_Paren.top().first == '(') {
-                Stk_Paren.pop();
-            } else {
-                Stk_Paren.push({')', i});
+        stack<pair<char,int>>Stk;
+        for(int i=0; i<n ; i++){
+            if(Str[i]==')'){
+                if(!Stk.empty() && Stk.top().first=='('){
+                    Stk.pop();
+                }else{
+                    Stk.push({Str[i],i}); // <-- this line was wrongly placed in your code
+                }
+            }else if(Str[i]=='('){
+                Stk.push({Str[i],i});
             }
         }
-        // Skip all other characters
-    }
 
-        unordered_set<int>Un_Valid_Idx;
-        while(!Stk_Paren.empty()){
-            Un_Valid_Idx.insert(Stk_Paren.top().second);
-            Stk_Paren.pop();
+        if(Stk.empty()){
+            return Str;
+        }
+
+        unordered_set<int>Un_Valid_Paren_Idx;
+        while(!Stk.empty()){
+            Un_Valid_Paren_Idx.insert(Stk.top().second);
+            Stk.pop();
         }
         string Result="";
-
         for(int j=0 ; j<n ; j++){
-            if(!Un_Valid_Idx.count(j)){
+            if(Un_Valid_Paren_Idx.find(j)==Un_Valid_Paren_Idx.end()){
                 Result+=Str[j];
             }
         }
         return Result;
+       
     }
 };
 
