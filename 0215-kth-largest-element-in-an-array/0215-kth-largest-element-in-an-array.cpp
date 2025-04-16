@@ -1,7 +1,33 @@
 class Solution {
-private:
-    int Partition_QucikSelect(vector<int> & nums, int Left ,  int Right){
-        int Pivot_Idx= Right;
+public:
+    int findKthLargest(vector<int>& nums, int k) {
+        priority_queue<int>PQ;
+        for(int num : nums){
+            PQ.push(num);
+        }
+        while(k>1){
+            PQ.pop();
+            k--;
+        }
+        return PQ.top();
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+   int Pivot_Idx= Right;
         int i = Left, j = Right-1;
 
         while ( i <= j){
@@ -46,10 +72,8 @@ public:
         return Quick_Select(nums, 0 , n-1 , n-k);
         //return Quick_Select(nums,0,n-1,k-1); // for Kth Smallest Element
     }
-};
 
-
-
+*/
 
 
 
