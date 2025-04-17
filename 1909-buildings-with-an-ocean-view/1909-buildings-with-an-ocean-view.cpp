@@ -1,6 +1,46 @@
 class Solution {
 public:
     vector<int> findBuildings(vector<int>& Heights) {
+ int n = Heights.size();
+    vector<int> result;
+    int Max_Height = INT_MIN;
+
+    for (int j = n - 1; j >= 0; j--) {
+        if (Heights[j] > Max_Height) {
+            result.push_back(j);
+            Max_Height = Heights[j];
+        }
+    }
+
+    reverse(result.begin(), result.end());
+    return result;
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+⏱ Time & Space Complexity
+Time: O(n)
+
+Space: O(n) — because of the stack and result list
+
+ vector<int> findBuildings(vector<int>& Heights) {
      int n = Heights.size();
      stack<int>Stk;
      int Max_Height=INT_MIN;
@@ -19,13 +59,7 @@ public:
      } 
      return Result;
     }
-};
-
-
-
-
-
-
+*/
 
 
 
