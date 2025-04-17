@@ -12,6 +12,31 @@ public:
 class Solution {
 public:
     Node* lowestCommonAncestor(Node* p, Node * q) {
+        unordered_set<int>Ancestors_set;
+        Node* Temp=p;
+        while(Temp){
+            Ancestors_set.insert(Temp->val);
+            Temp=Temp->parent;
+        }
+        Temp=q;
+
+        while(Temp){
+            if(Ancestors_set.find(Temp->val)!=Ancestors_set.end()){
+                return Temp;
+            }
+            Temp=Temp->parent;
+        }
+        return nullptr;
+    }
+};
+
+
+
+
+
+
+/*
+    Node* lowestCommonAncestor(Node* p, Node * q) {
         set<Node*>Path_P;
         Node* Curr_Node=p;
 
@@ -35,8 +60,7 @@ public:
         }
         return nullptr;
     }
-};
-
+*/
 
 
 
