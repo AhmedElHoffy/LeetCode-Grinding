@@ -1,6 +1,49 @@
 class Solution {
 public:
     vector<int> topKFrequent(vector<int>& nums, int k) {
+       // Modified Bucket Sort Approach: Time O(N), Space O(N)
+       // mapping i(Countsof Occurunces) to Values
+       int n = nums.size();
+       unordered_map<int,int>FreqMap;
+       for(int num:nums){
+        FreqMap[num]++;
+       }
+       vector<vector<int>>Buckets(n+1);
+       int n2 = Buckets.size();
+
+       for(auto& It:FreqMap){
+        Buckets[It.second].push_back(It.first);
+       }
+
+       vector<int>Result;
+       for(int j=n2-1 ; j>=0 && Result.size()<k ; j--){
+            for(int Num : Buckets[j]){
+                Result.push_back(Num);
+                if(Result.size()==k) break;
+            }
+       }
+       return Result;
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+ vector<int> topKFrequent(vector<int>& nums, int k) {
         int n = nums.size();
         unordered_map<int,int>FreqMap;
         vector<int>Result;
@@ -21,7 +64,7 @@ public:
             PQ.pop();
         }
         */
-
+/*
         //Approach 2: Modified Bucket Sort --> Time: O(n)
         vector<vector<int>>Buckets(n+1);
         int n2 = Buckets.size();
@@ -39,12 +82,7 @@ public:
 
         return Result;
     }
-};
-
-
-
-
-
+*/
 
 
 
