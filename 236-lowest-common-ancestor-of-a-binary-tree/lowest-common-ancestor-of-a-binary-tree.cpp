@@ -11,6 +11,52 @@ class Solution {
    
 public:
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
+        TreeNode* Curr_Node = root;
+        if(Curr_Node==nullptr){
+            return nullptr;
+        }
+
+        if(Curr_Node==p || Curr_Node==q){
+            return Curr_Node;
+        }
+
+        TreeNode* LeftChild  = lowestCommonAncestor(Curr_Node->left,p,q);
+        TreeNode* RightChild = lowestCommonAncestor(Curr_Node->right,p,q);
+        if(LeftChild && RightChild){
+            return Curr_Node;
+        }
+
+        return (LeftChild) ? LeftChild : RightChild;
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Iterative DFS Approach
+//✅ Time and Space Complexity:
+
+//Time: O(n) – each node is visited once
+//Space: O(n) – for parent map and ancestors set
+/*
+ TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
         unordered_map<TreeNode*,TreeNode*>Parent_Map;
         unordered_set<TreeNode*>Ancestors_Set;
         stack<TreeNode*>DFS_Stk;
@@ -44,14 +90,8 @@ public:
         }
         return q;
     }
-};
 
-
-
-
-
-
-
+*/
 
 
 
