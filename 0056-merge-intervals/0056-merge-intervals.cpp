@@ -2,6 +2,56 @@ class Solution {
 public:
     vector<vector<int>> merge(vector<vector<int>>& Intervals) {
         int n = Intervals.size();
+        vector<vector<int>>Result;
+        sort(Intervals.begin(),Intervals.end(), [] (vector<int>&Vec_1,vector<int>&Vec_2){
+           return  Vec_1[0] < Vec_2[0];
+        });
+
+        vector<int>Curr_Interval = Intervals[0];
+        for(int i=1 ; i<n ; i++){
+            if(Curr_Interval[1] < Intervals[i][0]){
+                Result.push_back(Curr_Interval);
+                Curr_Interval = Intervals[i];
+            }else{
+                if( Curr_Interval[1] < Intervals[i][1] ){
+                    Curr_Interval[1] = Intervals[i][1];
+                }
+
+            }
+        }
+
+        if(!Curr_Interval.empty())Result.push_back(Curr_Interval);
+        return Result;
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+vector<vector<int>> merge(vector<vector<int>>& Intervals) {
+        int n = Intervals.size();
         vector<vector<int>> Result;
         sort(Intervals.begin(),Intervals.end(), [] (vector<int> &a, vector<int>&b){
             return a[0] < b[0]; // Sort by start time
@@ -25,15 +75,7 @@ public:
         }
         return Result;        
     }
-};
-
-
-
-
-
-
-
-
+*/
 
 
 
