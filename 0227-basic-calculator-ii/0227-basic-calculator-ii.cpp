@@ -1,4 +1,69 @@
 class Solution {
+public:
+    bool Is_Digit(char Ch){
+        return (Ch>='0' && Ch<='9');
+    }
+    int calculate(string Str) {
+        int n = Str.size();
+        stack<int>Stk;
+        int num=0, Operand_1;
+        char Op='+', Curr_Ch;
+        int Result=0;
+        for(int i=0 ; i<n ; i++){
+            Curr_Ch = Str[i];
+            
+            // If Curr Character is a Digit
+            if(Is_Digit(Curr_Ch)){
+                num = num*10 + (Curr_Ch-'0');
+            }
+
+            // If Curr Char is neither a space nor a Digit
+
+            if((!Is_Digit(Curr_Ch) && Curr_Ch!=' ') || i==n-1){
+                if(Op=='+'){
+                    Stk.push(num);
+                }else if(Op=='-'){
+                    Stk.push(-num);
+                }else if(Op=='*'){
+                     Operand_1 = Stk.top();
+                     Stk.pop();
+                     Stk.push(Operand_1 * num);
+                }else if(Op=='/'){
+                    Operand_1 = Stk.top();
+                     Stk.pop();
+                     Stk.push(Operand_1 / num);                   
+                }
+                Op = Curr_Ch;
+                num=0;
+            }
+        }  // For Loop Ending Clause
+
+        while(!Stk.empty()){
+            Result+=Stk.top();
+            Stk.pop();
+        }
+        return Result;
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 private:
     bool Is_Digit(char ch){
         return (ch>='0' && ch<='9');
@@ -81,11 +146,7 @@ public:
         }
         return Nums_Stk.top();
     }
-};
-
-
-
-
+*/
 
 
 
