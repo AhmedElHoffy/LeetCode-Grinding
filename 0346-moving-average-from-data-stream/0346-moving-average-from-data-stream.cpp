@@ -1,4 +1,44 @@
 class MovingAverage {
+public:
+    queue<int>Q;
+    double Curr_Sum=0;
+    int Max_Size;
+    MovingAverage(int Size) {
+     Max_Size = Size;    
+    }
+    
+    double next(int Val) {
+        if(Q.empty()){
+            Q.push(Val);
+            Curr_Sum+=Val;
+        }else{
+            if(Q.size() < Max_Size){
+                Q.push(Val);
+                Curr_Sum+=Val;
+            }else{
+                Curr_Sum-=Q.front();
+                Q.pop();
+                Q.push(Val);
+                Curr_Sum+=Val;
+            }
+        }
+        return Curr_Sum/Q.size();
+    }
+};
+
+/**
+ * Your MovingAverage object will be instantiated and called as such:
+ * MovingAverage* obj = new MovingAverage(size);
+ * double param_1 = obj->next(val);
+ */
+
+
+
+ 
+
+
+
+/*
 
     // Optimized Approach 
 
@@ -28,7 +68,7 @@ public:
         return RunningSum / Window_Q.size();
     }
 
-
+*/
 
 
 //My Approach
@@ -97,11 +137,3 @@ public:
             }
     }
     */
-
-};
-
-/**
- * Your MovingAverage object will be instantiated and called as such:
- * MovingAverage* obj = new MovingAverage(size);
- * double param_1 = obj-> next(val);
- */
