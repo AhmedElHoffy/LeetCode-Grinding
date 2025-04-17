@@ -12,6 +12,34 @@ public:
 class Solution {
 public:
     Node* lowestCommonAncestor(Node* p, Node * q) {
+       Node* a = p, *b = q;
+       while(a!=b){
+        a= (a) ? a->parent:q;
+        b= (b) ? b->parent:p;
+       }
+       return a;
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+    Node* lowestCommonAncestor(Node* p, Node * q) {
         unordered_set<int>Ancestors_set;
         Node* Temp=p;
         while(Temp){
@@ -28,10 +56,7 @@ public:
         }
         return nullptr;
     }
-};
-
-
-
+*/
 
 
 
