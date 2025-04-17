@@ -1,6 +1,38 @@
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
+        int n = nums.size();
+        vector<int>Result;
+        unordered_map<int,int>Hash_Map;
+        int Comp;
+        for(int i=0 ; i<n ; i++){
+            Comp = target - nums[i];
+            if(Hash_Map.find(Comp)!=Hash_Map.end() && i!=Hash_Map[Comp]){
+                return {i,Hash_Map[Comp]};
+            }
+            Hash_Map[nums[i]]=i;
+        }
+        return {};
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+    vector<int> twoSum(vector<int>& nums, int target) {
         unordered_map<int,int>HashMap;
         int n = nums.size();
         int complement;
@@ -14,11 +46,9 @@ public:
         return {};
 
     }
-};
 
 
-
-
+*/
 
 
 
