@@ -1,27 +1,21 @@
 class Solution {
 public:
     void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) { 
-        vector<int>Merged(m+n,0);
+        int Ptr1=m-1, Ptr2=n-1,Ptr3=m+n-1;
 
-        int Ptr_m=0, Ptr_n=0, Ptr_mn=0;
-        while(Ptr_m<m && Ptr_n<n){
-            if(nums1[Ptr_m]<= nums2[Ptr_n]){
-                Merged[Ptr_mn++] = nums1[Ptr_m];
-                Ptr_m++;
+        while(Ptr1>=0 && Ptr2>=0){
+            if(nums1[Ptr1]>=nums2[Ptr2]){
+                nums1[Ptr3--]=nums1[Ptr1];
+                Ptr1--;
             }else{
-                Merged[Ptr_mn++] = nums2[Ptr_n];
-                Ptr_n++;
+                nums1[Ptr3--]=nums2[Ptr2];
+                Ptr2--;
             }
         }
-        while(Ptr_m<m){
-            Merged[Ptr_mn++] = nums1[Ptr_m];
-            Ptr_m++;
+        while(Ptr2>=0){
+            nums1[Ptr3--]=nums2[Ptr2--];
         }
-        while(Ptr_n<n){
-            Merged[Ptr_mn++] = nums2[Ptr_n];
-            Ptr_n++;
-        }
-        nums1=Merged;
+        
     }
 };
 
@@ -100,4 +94,30 @@ public:
     }
 };
 
+*/
+
+/*
+ void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) { 
+        vector<int>Merged(m+n,0);
+
+        int Ptr_m=0, Ptr_n=0, Ptr_mn=0;
+        while(Ptr_m<m && Ptr_n<n){
+            if(nums1[Ptr_m]<= nums2[Ptr_n]){
+                Merged[Ptr_mn++] = nums1[Ptr_m];
+                Ptr_m++;
+            }else{
+                Merged[Ptr_mn++] = nums2[Ptr_n];
+                Ptr_n++;
+            }
+        }
+        while(Ptr_m<m){
+            Merged[Ptr_mn++] = nums1[Ptr_m];
+            Ptr_m++;
+        }
+        while(Ptr_n<n){
+            Merged[Ptr_mn++] = nums2[Ptr_n];
+            Ptr_n++;
+        }
+        nums1=Merged;
+    }
 */
