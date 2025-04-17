@@ -30,6 +30,42 @@
 class Solution {
 public:
     int depthSum(vector<NestedInteger>& nestedList) {
+        queue<pair<vector<NestedInteger>,int>>BFS_Q;  //{nestedList,Depth}
+        int Total_Sum=0;
+        BFS_Q.push({nestedList,1});
+
+        pair<vector<NestedInteger>,int> Pair_It;
+        while(!BFS_Q.empty()){
+            auto [NestedList ,  Depth] = BFS_Q.front();
+            BFS_Q.pop();
+            
+            for(auto& X : NestedList){
+                if(X.isInteger()){
+                    Total_Sum+= X.getInteger() * Depth;
+                }else{
+                    BFS_Q.push({X.getList(),Depth+1});
+                }
+            }
+        }
+        return Total_Sum;
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+int depthSum(vector<NestedInteger>& nestedList) {
         queue<pair<vector<NestedInteger>,int>>BFS_Q; // {NestedList, Depth}
         BFS_Q.push({nestedList,1});
         int Total_Sum=0;
@@ -48,11 +84,7 @@ public:
         }
         return Total_Sum;
     }
-};
-
-
-
-
+*/
 
 
 /*
