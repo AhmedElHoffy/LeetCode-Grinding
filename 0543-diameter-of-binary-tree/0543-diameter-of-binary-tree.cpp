@@ -10,6 +10,28 @@
  * };
  */
 class Solution {
+public:
+    int Diameter=0;
+    int Max_Depth(TreeNode* Curr_Node){
+        if(!Curr_Node) return 0;
+
+        int Left_Child = Max_Depth(Curr_Node->left);
+        int Right_Child = Max_Depth(Curr_Node->right);
+        Diameter = max(Diameter,Left_Child+Right_Child);
+        return 1 + max(Left_Child,Right_Child);
+    }
+    int diameterOfBinaryTree(TreeNode* root) {
+
+        Max_Depth(root);
+        return Diameter;
+    }
+};
+
+
+
+
+/*
+class Solution {
     int diameter = 0;
     int Max_Height_DFS(TreeNode* Curr_Node){
         if (!Curr_Node)return 0;
@@ -28,9 +50,7 @@ public:
 
     }
 };
-
-
-
+*/
 
 
 
