@@ -13,6 +13,34 @@ class Solution {
 
 public:
     vector<vector<int>> verticalOrder(TreeNode* root) {
+        vector<vector<int>>Result;
+        if(!root) return Result;
+
+        queue<pair<TreeNode*,int>>BFS_Q;
+        BFS_Q.push({root,0});
+        map<int,vector<int>>HashMap;
+
+        while(!BFS_Q.empty()){
+            auto [Curr_Node ,  X_Idx] = BFS_Q.front();
+            BFS_Q.pop();
+            HashMap[X_Idx].push_back(Curr_Node->val);
+            if(Curr_Node->left)  BFS_Q.push({Curr_Node->left,X_Idx-1});
+            if(Curr_Node->right) BFS_Q.push({Curr_Node->right,X_Idx+1});
+        }
+
+        for(auto& Vec : HashMap){
+            Result.push_back(Vec.second);
+        }
+
+        return Result;
+    }
+};
+
+
+
+
+/*
+    vector<vector<int>> verticalOrder(TreeNode* root) {
        vector<vector<int>>Result;
        if(!root) return Result;
 
@@ -39,10 +67,8 @@ public:
        }
        return Result;
     }
-};
 
-
-
+*/
 
 
 /*
