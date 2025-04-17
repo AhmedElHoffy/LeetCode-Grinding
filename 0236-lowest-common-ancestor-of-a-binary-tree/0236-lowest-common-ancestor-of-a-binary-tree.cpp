@@ -11,6 +11,60 @@ class Solution {
    
 public:
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
+        unordered_map<TreeNode*,TreeNode*>Parent_Map;
+        unordered_set<TreeNode*>Ancestors_Set;
+        stack<TreeNode*>DFS_Stk;
+        
+        Parent_Map[root]=nullptr;
+        DFS_Stk.push(root);
+        
+        TreeNode* Curr_Node;
+        while(Parent_Map.find(p)==Parent_Map.end() || Parent_Map.find(q)==Parent_Map.end()){
+            Curr_Node=DFS_Stk.top();
+            DFS_Stk.pop();
+
+            if(Curr_Node->left){
+                Parent_Map[Curr_Node->left]=Curr_Node;
+                DFS_Stk.push(Curr_Node->left);
+            }
+
+            if(Curr_Node->right){
+                Parent_Map[Curr_Node->right]=Curr_Node;
+                DFS_Stk.push(Curr_Node->right);
+            }
+        }
+
+        while(p){
+            Ancestors_Set.insert(p);
+            p = Parent_Map[p];
+        }
+
+        while(Ancestors_Set.find(q)==Ancestors_Set.end()){
+            q = Parent_Map[q];
+        }
+        return q;
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+    TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
         // return null ptr if neither p or q are not found  or return Curr_Node if either was found
         TreeNode* Curr_Node = root;
         if (Curr_Node == nullptr){
@@ -35,8 +89,7 @@ public:
             return RightChild;
         }
     }
-};
-
+*/
 
 
 /*
