@@ -1,7 +1,49 @@
 class Solution {
 public:
     int subarraySum(vector<int>& nums, int k) {
-        int Curr_Sum=0;
+              int Curr_Sum=0;
+              int Counter=0;
+              int temp;
+              unordered_map<int,int>Prefix_SumFreq;
+              Prefix_SumFreq[0]++;
+
+              for(int num : nums){
+                Curr_Sum+=num;
+                temp =  Curr_Sum - k;
+                if(Prefix_SumFreq.find(temp)!=Prefix_SumFreq.end()){
+                    Counter+= Prefix_SumFreq[temp];
+                }
+                Prefix_SumFreq[Curr_Sum]++;
+              }
+              return Counter;
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Prefix_Sum = [1,2,3] , k = 2; 
+
+/*
+
+  int Curr_Sum=0;
         int counter=0;
         int temp;
         unordered_map<int,int>Prefix_SumFreq;
@@ -16,14 +58,10 @@ public:
                 Prefix_SumFreq[Curr_Sum]++;
         }
         return counter;
-    }
-};
 
-//Prefix_Sum = [1,2,3] , k = 2; 
+}
 
-
-
-
+*/
 
 
 
