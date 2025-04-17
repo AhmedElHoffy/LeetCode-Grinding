@@ -29,8 +29,41 @@
  */
 class Solution {
 public:
+    int DFS(const vector<NestedInteger>& Curr_nestedList , int Depth){
+        int Sum=0;
+        for(const auto& Curr_Idx : Curr_nestedList){
+            if(Curr_Idx.isInteger()){
+                Sum+=Curr_Idx.getInteger() * Depth;
+            }else{
+                Sum+=DFS(Curr_Idx.getList(),Depth+1);
+            }
+        }
+        return Sum;
+    }
     int depthSum(vector<NestedInteger>& nestedList) {
-        queue<pair<vector<NestedInteger>,int>>BFS_Q;  //{nestedList,Depth}
+        return DFS(nestedList,1);
+    }
+};
+
+
+
+
+
+
+
+//✅ Time and Space Complexity
+//⏱ Time Complexity:
+//O(n), where n is the total number of integers and lists in the input.
+
+//Every NestedInteger object is visited once.
+
+//\U0001f9e0 Space Complexity:
+//O(w), where w is the maximum number of NestedInteger elements at any level (i.e., the width of the //tree-like structure).
+
+//This comes from the queue size in the worst case.
+
+/*
+  queue<pair<vector<NestedInteger>,int>>BFS_Q;  //{nestedList,Depth}
         int Total_Sum=0;
         BFS_Q.push({nestedList,1});
 
@@ -49,9 +82,7 @@ public:
         }
         return Total_Sum;
     }
-};
-
-
+*/
 
 
 
