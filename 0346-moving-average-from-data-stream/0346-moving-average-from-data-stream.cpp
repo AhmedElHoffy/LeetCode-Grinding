@@ -10,18 +10,19 @@ public:
     double next(int Val) {
         if(Q.empty()){
             Q.push(Val);
-            Curr_Sum+=Val;
+            
         }else{
             if(Q.size() < Max_Size){
                 Q.push(Val);
-                Curr_Sum+=Val;
+                
             }else{
                 Curr_Sum-=Q.front();
                 Q.pop();
                 Q.push(Val);
-                Curr_Sum+=Val;
+                
             }
         }
+        Curr_Sum+=Val;
         return Curr_Sum/Q.size();
     }
 };
