@@ -56,6 +56,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0048-rotate-image](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0048-rotate-image) |
 | [0050-powx-n](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0050-powx-n) |
 | [0070-climbing-stairs](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0070-climbing-stairs) |
 | [0227-basic-calculator-ii](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0227-basic-calculator-ii) |
@@ -70,6 +71,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0001-two-sum](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0001-two-sum) |
 | [0011-container-with-most-water](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0011-container-with-most-water) |
 | [0031-next-permutation](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0031-next-permutation) |
+| [0048-rotate-image](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0048-rotate-image) |
 | [0056-merge-intervals](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0056-merge-intervals) |
 | [0088-merge-sorted-array](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0088-merge-sorted-array) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0121-best-time-to-buy-and-sell-stock) |
@@ -219,6 +221,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Matrix
 |  |
 | ------- |
+| [0048-rotate-image](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0048-rotate-image) |
 | [0733-flood-fill](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0733-flood-fill) |
 | [0861-flipping-an-image](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0861-flipping-an-image) |
 | [1036-rotting-oranges](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1036-rotting-oranges) |
