@@ -15,6 +15,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0408-valid-word-abbreviation](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0408-valid-word-abbreviation) |
 | [0443-string-compression](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0443-string-compression) |
 | [0680-valid-palindrome-ii](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0680-valid-palindrome-ii) |
+| [0861-flipping-an-image](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0861-flipping-an-image) |
 | [1028-interval-list-intersections](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1028-interval-list-intersections) |
 | [1713-dot-product-of-two-sparse-vectors](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1713-dot-product-of-two-sparse-vectors) |
 | [1790-lowest-common-ancestor-of-a-binary-tree-iii](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1790-lowest-common-ancestor-of-a-binary-tree-iii) |
@@ -94,6 +95,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0735-asteroid-collision](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0735-asteroid-collision) |
 | [0739-daily-temperatures](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0739-daily-temperatures) |
 | [0747-min-cost-climbing-stairs](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0747-min-cost-climbing-stairs) |
+| [0861-flipping-an-image](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0861-flipping-an-image) |
 | [0907-koko-eating-bananas](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0907-koko-eating-bananas) |
 | [0912-random-pick-with-weight](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0912-random-pick-with-weight) |
 | [0932-monotonic-array](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0932-monotonic-array) |
@@ -218,6 +220,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0733-flood-fill](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0733-flood-fill) |
+| [0861-flipping-an-image](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0861-flipping-an-image) |
 | [1036-rotting-oranges](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1036-rotting-oranges) |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/2038-nearest-exit-from-entrance-in-maze) |
 | [2428-equal-row-and-column-pairs](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/2428-equal-row-and-column-pairs) |
@@ -225,6 +228,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0735-asteroid-collision](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0735-asteroid-collision) |
+| [0861-flipping-an-image](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0861-flipping-an-image) |
 | [2428-equal-row-and-column-pairs](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/2428-equal-row-and-column-pairs) |
 | [2470-removing-stars-from-a-string](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/2470-removing-stars-from-a-string) |
 | [2553-total-cost-to-hire-k-workers](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/2553-total-cost-to-hire-k-workers) |
@@ -439,6 +443,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0136-single-number](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0136-single-number) |
 | [0338-counting-bits](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0338-counting-bits) |
+| [0861-flipping-an-image](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0861-flipping-an-image) |
 | [1441-minimum-flips-to-make-a-or-b-equal-to-c](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/1441-minimum-flips-to-make-a-or-b-equal-to-c) |
 ## Trie
 |  |
