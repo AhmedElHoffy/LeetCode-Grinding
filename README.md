@@ -91,6 +91,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0560-subarray-sum-equals-k](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0560-subarray-sum-equals-k) |
 | [0605-can-place-flowers](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0605-can-place-flowers) |
 | [0643-maximum-average-subarray-i](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0643-maximum-average-subarray-i) |
+| [0661-image-smoother](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0661-image-smoother) |
 | [0721-accounts-merge](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0721-accounts-merge) |
 | [0724-find-pivot-index](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0724-find-pivot-index) |
 | [0733-flood-fill](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0733-flood-fill) |
@@ -223,6 +224,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0048-rotate-image](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0048-rotate-image) |
+| [0661-image-smoother](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0661-image-smoother) |
 | [0733-flood-fill](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0733-flood-fill) |
 | [0861-flipping-an-image](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0861-flipping-an-image) |
 | [0864-image-overlap](https://github.com/AhmedElHoffy/LeetCode-Grinding/tree/master/0864-image-overlap) |
