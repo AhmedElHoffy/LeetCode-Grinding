@@ -1,55 +1,21 @@
 class Solution {
 public:
-    bool canPlaceFlowers(vector<int>& Flowerbed, int n) {
-        int Size = Flowerbed.size();
-        bool Empty_Left, Empty_Right;
+    bool canPlaceFlowers(vector<int>& flowerbed, int num) {
+     if(num==0) return true;
+     bool Left_Empty,Right_Empty;
+     int n = flowerbed.size();
 
-        for(int i=0 ; i < Size && n>0 ; i++){
-            if(Flowerbed[i]==0){
-                Empty_Left= (i==0 || Flowerbed[i-1]==0);
-                Empty_Right = (i==Size-1 || Flowerbed[i+1]==0);
-
-                if(Empty_Left && Empty_Right){
-                    Flowerbed[i]=1;
-                    n--;
-                }
+     for(int i=0 ; i<n ;i++){
+        if(flowerbed[i]==0){
+            Left_Empty =  (i==0)   || (flowerbed[i-1]==0);
+            Right_Empty = (i==n-1) || (flowerbed[i+1]==0);
+            if(Left_Empty && Right_Empty){
+                flowerbed[i]=1;
+                num--;
+                if(num==0) return true;
             }
         }
-
-        return n==0;
+     }
+      return num==0;   
     }
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
- for (int i = 0; i < flowerbed.size(); i++) {
-            if (flowerbed[i] == 0) {
-                bool emptyPrev = (i == 0 || flowerbed[i - 1] == 0);
-                bool emptyNext = (i == flowerbed.size() - 1 || flowerbed[i + 1] == 0);
-                
-                if (emptyPrev && emptyNext) {
-                    flowerbed[i] = 1; // Plant a flower
-                    n--; // Decrement required flowers
-                }
-            }
-            if (n <= 0) return true; // Early exit if all flowers are planted
-        }
-        return n <= 0;
-
-*/
