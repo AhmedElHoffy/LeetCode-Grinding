@@ -3,6 +3,38 @@ class Solution {
 public:
     int maxOperations(vector<int>& Nums, int k) {
         int n = Nums.size();
+        unordered_map<int,int>Freq_Map;
+        int Max_pairs_Count=0;
+        int Comp;
+
+        for(int i=0 ; i<n ; i++){
+            Comp = k - Nums[i];
+            if(Freq_Map[Comp] > 0){
+                Max_pairs_Count++;
+                Freq_Map[Comp]--;
+            }else{
+                Freq_Map[Nums[i]]++;
+            }
+        }
+        return Max_pairs_Count;
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+//replaced on : 11/11/2025
+/*
+
+    int maxOperations(vector<int>& Nums, int k) {
+        int n = Nums.size();
         unordered_map<int,int>Freq_Map; //[Num] Set;
         int Max_pairs_Count=0;
         int Complement;
@@ -18,12 +50,7 @@ public:
         }
         return Max_pairs_Count;
     }
-};
-
-
-
-
-
+*/
 
 
 
