@@ -1,6 +1,46 @@
 class Solution {
 public:
     bool isSubsequence(string Sub_Str_S, string Str_T) {
+        int n1=Sub_Str_S.size(),  n2=Str_T.size();
+        int i=0, j=0;
+        while( i<n1 && j<n2){
+            if(Sub_Str_S[i]==Str_T[j]) i++;
+            j++;
+        }
+        return i==n1;
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+    bool isSubsequence(string Sub_Str_S, string Str_T) {
         int S_size = Sub_Str_S.length(), T_size = Str_T.length();
         int Running_Idx=0;
         for(char Ch : Str_T){
@@ -13,12 +53,8 @@ public:
         }
         return ( (Running_Idx==S_size) ? true:false);
     }
-};
 
-
-
-
-
+*/
 
 
 
