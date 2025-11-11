@@ -3,6 +3,53 @@ class Solution {
 public:
     int maxArea(vector<int>& Heights) {
         int n = Heights.size();
+        int i=0,j=n-1;
+        int Max_Area = 0,Curr_Area=0;
+        while(i<j){
+            Curr_Area = min(Heights[i],Heights[j]) * (j-i);
+            if(Max_Area <Curr_Area) Max_Area=Curr_Area;
+            if (Heights[i] <= Heights[j]){
+                i++;
+            }else{
+                j--;
+            }
+        }
+        return Max_Area;
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+    int maxArea(vector<int>& Heights) {
+        int n = Heights.size();
         int Max_Area=0;
         int Left_Ptr=0, Right_Ptr=n-1;
         int Curr_Area;
@@ -17,13 +64,8 @@ public:
         }
         return Max_Area;
     }
-};
 
-
-
-
-
-
+*/
 
 
 
