@@ -2,6 +2,37 @@ class Solution {
 
 public:
     double findMaxAverage(vector<int>& Nums, int k) {
+        int n = Nums.size();
+        double Curr_Sum=0;
+
+        for(int i=0 ; i<k ; i++){
+            Curr_Sum+=Nums[i];
+        }
+        double Max_Sum=Curr_Sum;
+
+        for(int j=k ; j<n ; j++){
+            Curr_Sum+= Nums[j] - Nums[j-k];
+            if(Max_Sum < Curr_Sum) Max_Sum=Curr_Sum;
+        }
+        return Max_Sum / k;
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+// Replaced on 11/11/2025
+
+/*
+    double findMaxAverage(vector<int>& Nums, int k) {
       int n = Nums.size();
       double Max_Avg=-1e9;
       double Curr_Sum=0;
@@ -19,20 +50,7 @@ public:
       }
       return Max_Avg;
     }
-};
-
-
-
-
-
-
-
-
-
-
-
-
-
+*/
 
 
 
