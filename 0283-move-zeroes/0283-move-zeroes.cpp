@@ -1,10 +1,5 @@
 class Solution {
 public:
-    void swap_nums(int &a, int &b){
-        int temp = a;
-        a = b;
-        b = temp;
-    }
     void moveZeroes(vector<int>& nums) {
         int n = nums.size();
         int NonZero_idx=0;
