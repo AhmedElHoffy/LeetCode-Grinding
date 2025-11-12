@@ -1,6 +1,36 @@
 class Solution {
 public:
     int longestSubarray(vector<int>& Nums) {
+     int n=Nums.size();
+     int Left_Idx=0, Right_Idx=0, Zeros_Count=0;
+     int Max_Len=0;
+     while(Right_Idx < n){
+        if(Nums[Right_Idx]==0) Zeros_Count++;
+        while(Zeros_Count>1){
+            if(Nums[Left_Idx]==0){
+                Zeros_Count--;
+            }
+            Left_Idx++;
+        }
+        Max_Len = max(Max_Len , Right_Idx-Left_Idx);
+        Right_Idx++;
+     }
+     return Max_Len;
+    }
+};
+
+
+
+
+
+
+
+
+
+
+/*
+
+  int longestSubarray(vector<int>& Nums) {
       int n = Nums.size();
       int Left=0,Right=0,Zeros_Count=0;
       int Max_Len=0;
@@ -17,18 +47,8 @@ public:
       }
       return Max_Len;
     }
-};
 
-
-
-
-
-
-
-
-
-
-
+*/
 
 
 
