@@ -1,4 +1,44 @@
 class Solution {
+public:
+    int compress(vector<char>& chars) {
+        int n = chars.size();
+        int write =0;
+        char Curr_ch;
+        int start_rep_idx, Count_rep;
+        string Num_Str;
+        for (int read_idx=0; read_idx < n ; ){
+            Curr_ch =chars[read_idx];
+            start_rep_idx = read_idx;
+
+            while(read_idx<n && chars[read_idx]==Curr_ch) read_idx++;
+            Count_rep = read_idx-start_rep_idx;
+
+            chars[write++]=Curr_ch;
+
+            if(Count_rep > 1){
+                Num_Str = to_string(Count_rep);
+                for(char ch : Num_Str){
+                    chars[write++]=ch;
+                }
+            }
+        }
+        return write;
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+class Solution {
 private: 
     string Num_2_Str_Convert(int num){
         string Result="";
