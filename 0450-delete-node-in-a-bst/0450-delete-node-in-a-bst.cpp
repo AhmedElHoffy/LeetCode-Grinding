@@ -10,7 +10,40 @@
  * };
  */
 class Solution {
-public:
+public:    
+    TreeNode* deleteNode(TreeNode* root, int key) {
+        TreeNode* Curr_Node = root;
+        if(!Curr_Node) return nullptr;
+
+        if (key < Curr_Node->val) {
+            Curr_Node->left = deleteNode(Curr_Node->left, key);
+        } else if (key > root->val) {
+            Curr_Node->right = deleteNode(Curr_Node->right, key);
+        }else{
+
+            // Found Node
+            if (!Curr_Node->left) return Curr_Node->right;
+            if (!Curr_Node->right) return Curr_Node->left;
+
+            // Case 3:  Two children → find inorder successor
+            TreeNode* Min_Node = findMin(Curr_Node->right);
+            Curr_Node->val = Min_Node->val;
+            Curr_Node->right = deleteNode(Curr_Node->right,Min_Node->val);
+        }
+        return Curr_Node;
+    }
+
+    TreeNode* findMin(TreeNode* node){
+        while(node->left){
+            node = node->left;
+        }
+        return node;
+    }
+
+};
+
+
+/*
 TreeNode* deleteNode(TreeNode* root, int key) {
         if (!root) return nullptr;
 
@@ -36,4 +69,4 @@ TreeNode* deleteNode(TreeNode* root, int key) {
         while (node->left) node = node->left;
         return node;
     }
-};
+*/
