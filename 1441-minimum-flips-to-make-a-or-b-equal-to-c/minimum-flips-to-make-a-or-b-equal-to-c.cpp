@@ -13,7 +13,8 @@ public:
                     Total_Flips++;
                 }
             }else{
-                Total_Flips += Curr_bitA + Curr_bitB;
+                if(Curr_bitA==1) Total_Flips++;
+                if(Curr_bitB==1) Total_Flips++;
             } 
         }
         return Total_Flips;
